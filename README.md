@@ -1,4 +1,4 @@
-# Amazing Deals 17 🔥
+# Amazing Deals 🔥
 
 Daily Amazon deals website with Instagram integration for [@amazingdeals_17](https://instagram.com/amazingdeals_17)
 
