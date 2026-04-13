@@ -4,6 +4,8 @@ let allDeals = [];
 document.addEventListener('DOMContentLoaded', () => {
     loadDeals();
     setupFilters();
+    setupScrollToTop();
+    addCardAnimations();
 });
 
 async function loadDeals() {
@@ -39,6 +41,9 @@ function displayDeals(deals) {
         const card = createDealCard(deal);
         grid.appendChild(card);
     });
+
+    // Re-trigger animations for new cards
+    setTimeout(() => addCardAnimations(), 100);
 }
 
 function createDealCard(deal) {
@@ -207,5 +212,55 @@ function setupFilters() {
             // Apply filters
             applyFilters();
         });
+    });
+}
+
+function setupScrollToTop() {
+    const scrollTopBtn = document.getElementById('scrollTop');
+
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            scrollTopBtn.classList.add('visible');
+        } else {
+            scrollTopBtn.classList.remove('visible');
+        }
+    });
+
+    // Scroll to top when clicked
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+function addCardAnimations() {
+    // Add entrance animations to cards as they come into view
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }, index * 50);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Observe all deal cards
+    const cards = document.querySelectorAll('.deal-card');
+    cards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(card);
     });
 }
