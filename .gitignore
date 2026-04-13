@@ -1,34 +1,5 @@
-# Dependencies
 node_modules/
-package-lock.json
-
-# Environment variables
 .env
-.env.local
-
-# Data files (optional - uncomment if you don't want to commit deal data)
-# data/deals.json
-# data/posted.json
-# data/prepared_posts.json
 data/raw_deals.json
-
-# Images
-images/deals/*
-!images/deals/.gitkeep
-
-# Logs
-*.log
-npm-debug.log*
-
-# OS files
 .DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Vercel
-.vercel
+*.log

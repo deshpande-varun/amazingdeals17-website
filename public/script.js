@@ -6,11 +6,20 @@ let isLoading = false;
 
 // Load deals on page load
 document.addEventListener('DOMContentLoaded', () => {
+    setTodayDate();
     loadDeals();
     setupFilters();
     setupScrollToTop();
     setupInfiniteScroll();
 });
+
+function setTodayDate() {
+    const today = new Date();
+    const options = { month: 'long', day: 'numeric' };
+    const dateString = today.toLocaleDateString('en-US', options);
+    const todayDeals = document.getElementById('todayDeals');
+    todayDeals.textContent = `${dateString} Deals`;
+}
 
 async function loadDeals() {
     try {
@@ -120,7 +129,7 @@ function removeLoadingIndicator() {
 function createDealCard(deal) {
     const discount = deal.originalPrice
         ? Math.round(((deal.originalPrice - deal.price) / deal.originalPrice) * 100)
-        : 'HOT';
+        : 0;
 
     // Create card elements safely
     const card = document.createElement('div');
@@ -156,20 +165,38 @@ function createDealCard(deal) {
 
     const priceDiv = document.createElement('div');
     priceDiv.className = 'deal-price';
+
+    const priceContainer = document.createElement('div');
+    priceContainer.className = 'price-container';
+
+    // Show original price if available
+    if (deal.originalPrice && deal.originalPrice > deal.price) {
+        const originalPrice = document.createElement('span');
+        originalPrice.className = 'original-price';
+        originalPrice.textContent = `$${deal.originalPrice.toFixed(2)}`;
+        priceContainer.appendChild(originalPrice);
+    }
+
     const currentPrice = document.createElement('span');
     currentPrice.className = 'current-price';
     currentPrice.textContent = `$${deal.price.toFixed(2)}`;
-    const badge = document.createElement('span');
-    badge.className = 'deal-badge';
-    badge.textContent = `${discount}${typeof discount === 'number' ? '%' : ''} DEAL`;
-    priceDiv.appendChild(currentPrice);
-    priceDiv.appendChild(badge);
+    priceContainer.appendChild(currentPrice);
+
+    priceDiv.appendChild(priceContainer);
+
+    // Only show "HOT DEAL" badge if discount is 10% or more
+    if (discount >= 10) {
+        const badge = document.createElement('span');
+        badge.className = 'deal-badge';
+        badge.textContent = `${discount}% OFF`;
+        priceDiv.appendChild(badge);
+    }
 
     const shopBtn = document.createElement('a');
     shopBtn.href = deal.url;
     shopBtn.className = 'shop-btn';
     shopBtn.target = '_blank';
-    shopBtn.textContent = '🛒 Shop Now on Amazon';
+    shopBtn.textContent = 'Shop Now on Amazon';
     shopBtn.onclick = (e) => e.stopPropagation();
 
     content.appendChild(category);
@@ -186,40 +213,15 @@ function createDealCard(deal) {
 
 function updateStats() {
     const dealsCount = document.getElementById('dealsCount');
-    dealsCount.textContent = `🔥 ${allDeals.length} Hot Deals Available`;
-
-    const lastUpdate = document.getElementById('lastUpdate');
-    if (allDeals.length > 0 && allDeals[0].scrapedAt) {
-        const updateDate = new Date(allDeals[0].scrapedAt);
-        const timeAgo = getTimeAgo(updateDate);
-        lastUpdate.textContent = `🕒 Updated ${timeAgo}`;
-    }
-}
-
-function getTimeAgo(date) {
-    const seconds = Math.floor((new Date() - date) / 1000);
-    const intervals = {
-        year: 31536000,
-        month: 2592000,
-        week: 604800,
-        day: 86400,
-        hour: 3600,
-        minute: 60
-    };
-
-    for (const [unit, secondsInUnit] of Object.entries(intervals)) {
-        const interval = Math.floor(seconds / secondsInUnit);
-        if (interval >= 1) {
-            return `${interval} ${unit}${interval > 1 ? 's' : ''} ago`;
-        }
-    }
-    return 'just now';
+    dealsCount.textContent = `${filteredDeals.length} deals available`;
 }
 
 function setupFilters() {
     const searchInput = document.getElementById('searchInput');
-    const categoryButtons = document.querySelectorAll('.category-btn');
-    const priceButtons = document.querySelectorAll('.price-btn');
+    const categoryTabs = document.querySelectorAll('.category-tab');
+    const priceOptions = document.querySelectorAll('.price-option');
+    const priceFilterBtn = document.getElementById('priceFilterBtn');
+    const priceFilterDropdown = document.getElementById('priceFilterDropdown');
 
     let activeCategory = 'all';
     let activePriceRange = 'all';
@@ -254,37 +256,50 @@ function setupFilters() {
         // Update filtered deals and reset display
         filteredDeals = filtered;
         displayInitialDeals();
+        updateStats();
     };
 
     // Search input listener
     searchInput.addEventListener('input', applyFilters);
 
-    // Category button listeners
-    categoryButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Remove active class from all category buttons
-            categoryButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
-            button.classList.add('active');
+    // Category tab listeners
+    categoryTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Remove active class from all tabs
+            categoryTabs.forEach(t => t.classList.remove('active'));
+            // Add active class to clicked tab
+            tab.classList.add('active');
             // Update active category
-            activeCategory = button.dataset.category;
+            activeCategory = tab.dataset.category;
             // Apply filters
             applyFilters();
         });
     });
 
-    // Price button listeners
-    priceButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Remove active class from all price buttons
-            priceButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
-            button.classList.add('active');
+    // Price filter button toggle
+    priceFilterBtn.addEventListener('click', () => {
+        priceFilterDropdown.classList.toggle('show');
+    });
+
+    // Price option listeners
+    priceOptions.forEach(option => {
+        option.addEventListener('click', () => {
+            // Remove active class from all options
+            priceOptions.forEach(o => o.classList.remove('active'));
+            // Add active class to clicked option
+            option.classList.add('active');
             // Update active price range
-            activePriceRange = button.dataset.price;
+            activePriceRange = option.dataset.price;
             // Apply filters
             applyFilters();
         });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!priceFilterBtn.contains(e.target) && !priceFilterDropdown.contains(e.target)) {
+            priceFilterDropdown.classList.remove('show');
+        }
     });
 }
 

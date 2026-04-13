@@ -47,22 +47,35 @@ async function scrapeAmazonDeals() {
                price <= config.amazonConfig.priceRange.max;
       })
       .slice(0, config.amazonConfig.dealsPerDay)
-      .map(item => ({
-        id: item.asin,
-        name: item.name,
-        url: `${item.url}?tag=${config.amazonConfig.affiliateTag}`,
-        originalUrl: item.url,
-        asin: item.asin,
-        price: item.price.value,
-        currency: item.price.currency,
-        rating: item.stars,
-        reviewCount: item.reviewsCount,
-        imageUrl: item.thumbnailUrl,
-        category: item.categoryName,
-        position: item.position,
-        scrapedAt: new Date().toISOString(),
-        status: 'pending'
-      }));
+      .map(item => {
+        const deal = {
+          id: item.asin,
+          name: item.name,
+          url: `${item.url}?tag=${config.amazonConfig.affiliateTag}`,
+          originalUrl: item.url,
+          asin: item.asin,
+          price: item.price.value,
+          currency: item.price.currency,
+          rating: item.stars,
+          reviewCount: item.reviewsCount,
+          imageUrl: item.thumbnailUrl,
+          category: item.categoryName,
+          position: item.position,
+          scrapedAt: new Date().toISOString(),
+          status: 'pending'
+        };
+
+        // Add original price if available (check various possible field names)
+        if (item.beforeDiscountPrice?.value && item.beforeDiscountPrice.value > item.price.value) {
+          deal.originalPrice = item.beforeDiscountPrice.value;
+        } else if (item.listPrice?.value && item.listPrice.value > item.price.value) {
+          deal.originalPrice = item.listPrice.value;
+        } else if (item.wasPrice?.value && item.wasPrice.value > item.price.value) {
+          deal.originalPrice = item.wasPrice.value;
+        }
+
+        return deal;
+      });
 
     console.log(`✅ Filtered to ${filteredDeals.length} deals under $${config.amazonConfig.priceRange.max}`);
 
