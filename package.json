@@ -1,0 +1,21 @@
+{
+  "name": "amazingdeals17-website",
+  "version": "1.0.0",
+  "description": "Amazon deals website with Instagram integration for @amazingdeals_17",
+  "main": "api/server.js",
+  "scripts": {
+    "start": "node api/server.js",
+    "scrape": "node scripts/scrape-deals.js",
+    "dev": "node api/server.js"
+  },
+  "keywords": ["amazon", "deals", "instagram"],
+  "author": "amazingdeals_17",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-cron": "^3.0.3",
+    "axios": "^1.6.0",
+    "sharp": "^0.33.0",
+    "cors": "^2.8.5"
+  }
+}

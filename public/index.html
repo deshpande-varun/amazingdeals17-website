@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Deals 17 - Daily Amazon Deals Up to $100</title>
+    <meta name="description" content="Save 50-70% on Amazon products! Daily curated deals under $100. Follow @amazingdeals_17 on Instagram for more.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🔥 Amazing Deals 17</h1>
+            <p>Daily Amazon Deals • Follow <a href="https://instagram.com/amazingdeals_17" target="_blank">@amazingdeals_17</a></p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="🔍 Search deals..." />
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Home & Kitchen">Home & Kitchen</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Beauty">Beauty</option>
+                <option value="Sports & Outdoors">Sports</option>
+            </select>
+            <select id="priceFilter">
+                <option value="all">All Prices</option>
+                <option value="0-25">Under $25</option>
+                <option value="25-50">$25 - $50</option>
+                <option value="50-100">$50 - $100</option>
+            </select>
+        </div>
+
+        <div id="statsBar" class="stats-bar">
+            <span id="dealsCount">Loading deals...</span>
+            <span id="lastUpdate"></span>
+        </div>
+
+        <div id="dealsGrid" class="deals-grid">
+            <!-- Deals will be loaded here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>💰 All prices and deals are subject to change. Check Amazon for current pricing.</p>
+        <p>🔗 Affiliate Disclosure: We earn from qualifying purchases.</p>
+        <p>Made with ❤️ by <a href="https://instagram.com/amazingdeals_17" target="_blank">@amazingdeals_17</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

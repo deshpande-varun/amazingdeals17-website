@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Amazing Deals 17</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <h1>⚙️ Admin Dashboard</h1>
+            <div class="header-actions">
+                <a href="/" target="_blank" class="btn-secondary">👁️ View Public Site</a>
+                <a href="https://instagram.com/amazingdeals_17" target="_blank" class="btn-secondary">📱 Instagram</a>
+            </div>
+        </header>
+
+        <div class="stats-dashboard">
+            <div class="stat-card">
+                <div class="stat-value" id="totalDeals">-</div>
+                <div class="stat-label">Total Deals</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="pendingDeals">-</div>
+                <div class="stat-label">Pending to Post</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="postedDeals">-</div>
+                <div class="stat-label">Posted</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="avgPrice">-</div>
+                <div class="stat-label">Avg Price</div>
+            </div>
+        </div>
+
+        <div class="action-panel">
+            <button id="scrapeBtn" class="btn-primary">🔄 Fetch New Deals</button>
+            <div id="lastScrape" class="last-scrape">Last scrape: Never</div>
+        </div>
+
+        <div id="scrapeStatus" class="status-message" style="display: none;"></div>
+
+        <div class="deals-section">
+            <h2>📋 Pending Deals</h2>
+            <div id="pendingDealsList" class="deals-list">
+                <div class="loading">Loading deals...</div>
+            </div>
+        </div>
+
+        <div class="deals-section">
+            <h2>✅ Posted Deals</h2>
+            <div id="postedDealsList" class="deals-list">
+                <div class="loading">Loading posted deals...</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="postModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>📱 Prepare Instagram Post</h2>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
