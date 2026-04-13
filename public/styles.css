@@ -47,29 +47,81 @@ header a:hover {
     border-bottom-color: white;
 }
 
-/* Filters */
-.filters {
-    display: flex;
-    gap: 15px;
+/* Search Section */
+.search-section {
+    margin: 30px 0 20px 0;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 16px 24px;
+    border: 2px solid #dbdbdb;
+    border-radius: 50px;
+    font-size: 16px;
+    background: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.2);
+}
+
+/* Category Section */
+.category-section,
+.price-filter-section {
     margin: 30px 0;
+}
+
+.filter-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 15px;
+}
+
+.category-buttons,
+.price-buttons {
+    display: flex;
+    gap: 12px;
     flex-wrap: wrap;
 }
 
-.filters input,
-.filters select {
-    padding: 12px 20px;
-    border: 1px solid #dbdbdb;
-    border-radius: 8px;
-    font-size: 14px;
+.category-btn,
+.price-btn {
+    padding: 12px 24px;
+    border: 2px solid #e0e0e0;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
     background: white;
-    flex: 1;
-    min-width: 200px;
+    color: #262626;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-.filters input:focus,
-.filters select:focus {
-    outline: none;
+.category-btn:hover,
+.price-btn:hover {
     border-color: #667eea;
+    color: #667eea;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.category-btn.active,
+.price-btn.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-color: #667eea;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.category-btn.active:hover,
+.price-btn.active:hover {
+    transform: translateY(-2px);
 }
 
 /* Stats Bar */
@@ -245,12 +297,23 @@ footer a:hover {
         gap: 20px;
     }
 
-    .filters {
-        flex-direction: column;
+    .filter-title {
+        font-size: 16px;
     }
 
-    .filters input,
-    .filters select {
-        min-width: 100%;
+    .category-buttons,
+    .price-buttons {
+        gap: 8px;
+    }
+
+    .category-btn,
+    .price-btn {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    #searchInput {
+        font-size: 15px;
+        padding: 14px 20px;
     }
 }

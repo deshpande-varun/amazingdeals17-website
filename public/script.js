@@ -142,8 +142,11 @@ function getTimeAgo(date) {
 
 function setupFilters() {
     const searchInput = document.getElementById('searchInput');
-    const categoryFilter = document.getElementById('categoryFilter');
-    const priceFilter = document.getElementById('priceFilter');
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const priceButtons = document.querySelectorAll('.price-btn');
+
+    let activeCategory = 'all';
+    let activePriceRange = 'all';
 
     const applyFilters = () => {
         let filtered = [...allDeals];
@@ -158,17 +161,15 @@ function setupFilters() {
         }
 
         // Category filter
-        const category = categoryFilter.value;
-        if (category !== 'all') {
+        if (activeCategory !== 'all') {
             filtered = filtered.filter(deal =>
-                deal.category && deal.category.includes(category)
+                deal.category && deal.category.includes(activeCategory)
             );
         }
 
         // Price filter
-        const priceRange = priceFilter.value;
-        if (priceRange !== 'all') {
-            const [min, max] = priceRange.split('-').map(Number);
+        if (activePriceRange !== 'all') {
+            const [min, max] = activePriceRange.split('-').map(Number);
             filtered = filtered.filter(deal =>
                 deal.price >= min && deal.price <= max
             );
@@ -177,7 +178,34 @@ function setupFilters() {
         displayDeals(filtered);
     };
 
+    // Search input listener
     searchInput.addEventListener('input', applyFilters);
-    categoryFilter.addEventListener('change', applyFilters);
-    priceFilter.addEventListener('change', applyFilters);
+
+    // Category button listeners
+    categoryButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all category buttons
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            button.classList.add('active');
+            // Update active category
+            activeCategory = button.dataset.category;
+            // Apply filters
+            applyFilters();
+        });
+    });
+
+    // Price button listeners
+    priceButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all price buttons
+            priceButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            button.classList.add('active');
+            // Update active price range
+            activePriceRange = button.dataset.price;
+            // Apply filters
+            applyFilters();
+        });
+    });
 }
