@@ -1,11 +1,15 @@
 let allDeals = [];
+let filteredDeals = [];
+let displayedDeals = 0;
+const DEALS_PER_BATCH = 20;
+let isLoading = false;
 
 // Load deals on page load
 document.addEventListener('DOMContentLoaded', () => {
     loadDeals();
     setupFilters();
     setupScrollToTop();
-    addCardAnimations();
+    setupInfiniteScroll();
 });
 
 async function loadDeals() {
@@ -16,7 +20,12 @@ async function loadDeals() {
         // Filter only non-posted deals for public display
         allDeals = allDeals.filter(deal => deal.status !== 'posted');
 
-        displayDeals(allDeals);
+        // Initialize with filtered deals
+        filteredDeals = allDeals;
+        displayedDeals = 0;
+
+        // Display first batch
+        displayInitialDeals();
         updateStats();
     } catch (error) {
         console.error('Error loading deals:', error);
@@ -25,11 +34,11 @@ async function loadDeals() {
     }
 }
 
-function displayDeals(deals) {
+function displayInitialDeals() {
     const grid = document.getElementById('dealsGrid');
     grid.innerHTML = ''; // Clear existing content
 
-    if (deals.length === 0) {
+    if (filteredDeals.length === 0) {
         const message = document.createElement('div');
         message.className = 'loading';
         message.textContent = 'No deals found. Check back soon! 🔄';
@@ -37,13 +46,75 @@ function displayDeals(deals) {
         return;
     }
 
-    deals.forEach(deal => {
+    // Remove loading indicator if exists
+    removeLoadingIndicator();
+
+    // Display first batch
+    displayedDeals = 0;
+    loadMoreDeals();
+}
+
+function loadMoreDeals() {
+    if (isLoading) return;
+
+    const grid = document.getElementById('dealsGrid');
+    const startIndex = displayedDeals;
+    const endIndex = Math.min(startIndex + DEALS_PER_BATCH, filteredDeals.length);
+
+    if (startIndex >= filteredDeals.length) {
+        return; // No more deals to load
+    }
+
+    isLoading = true;
+
+    // Add deals to grid
+    for (let i = startIndex; i < endIndex; i++) {
+        const deal = filteredDeals[i];
         const card = createDealCard(deal);
         grid.appendChild(card);
-    });
+    }
+
+    displayedDeals = endIndex;
+    isLoading = false;
 
     // Re-trigger animations for new cards
     setTimeout(() => addCardAnimations(), 100);
+
+    // Add or remove loading indicator
+    if (displayedDeals < filteredDeals.length) {
+        addLoadingIndicator();
+    } else {
+        removeLoadingIndicator();
+    }
+}
+
+function addLoadingIndicator() {
+    // Remove existing indicator
+    removeLoadingIndicator();
+
+    const indicator = document.createElement('div');
+    indicator.className = 'load-more-indicator';
+    indicator.id = 'loadMoreIndicator';
+
+    const spinner = document.createElement('div');
+    spinner.className = 'load-more-spinner';
+
+    const text = document.createElement('div');
+    text.className = 'load-more-text';
+    text.textContent = 'Loading more deals...';
+
+    indicator.appendChild(spinner);
+    indicator.appendChild(text);
+
+    const main = document.querySelector('main.container');
+    main.appendChild(indicator);
+}
+
+function removeLoadingIndicator() {
+    const indicator = document.getElementById('loadMoreIndicator');
+    if (indicator) {
+        indicator.remove();
+    }
 }
 
 function createDealCard(deal) {
@@ -180,7 +251,9 @@ function setupFilters() {
             );
         }
 
-        displayDeals(filtered);
+        // Update filtered deals and reset display
+        filteredDeals = filtered;
+        displayInitialDeals();
     };
 
     // Search input listener
@@ -236,6 +309,21 @@ function setupScrollToTop() {
     });
 }
 
+function setupInfiniteScroll() {
+    window.addEventListener('scroll', () => {
+        // Check if user scrolled near bottom
+        const scrollPosition = window.innerHeight + window.pageYOffset;
+        const pageHeight = document.documentElement.scrollHeight;
+
+        // Load more when within 500px of bottom
+        if (scrollPosition >= pageHeight - 500) {
+            if (displayedDeals < filteredDeals.length && !isLoading) {
+                loadMoreDeals();
+            }
+        }
+    });
+}
+
 function addCardAnimations() {
     // Add entrance animations to cards as they come into view
     const observerOptions = {
@@ -249,18 +337,19 @@ function addCardAnimations() {
                 setTimeout(() => {
                     entry.target.style.opacity = '1';
                     entry.target.style.transform = 'translateY(0)';
-                }, index * 50);
+                }, index * 30);
                 observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    // Observe all deal cards
-    const cards = document.querySelectorAll('.deal-card');
+    // Observe all deal cards that haven't been animated yet
+    const cards = document.querySelectorAll('.deal-card:not(.animated)');
     cards.forEach(card => {
+        card.classList.add('animated');
         card.style.opacity = '0';
-        card.style.transform = 'translateY(30px)';
-        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         observer.observe(card);
     });
 }
