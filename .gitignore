@@ -1,6 +1,5 @@
+*.log
 node_modules/
 .env
-data/raw_deals.json
-.DS_Store
-*.log
 .vercel
+data/raw_deals.json
