@@ -20,7 +20,4 @@
       "dest": "/public/$1"
     }
   ],
-  "env": {
-    "APIFY_TOKEN": "@apify_token"
-  }
 }
