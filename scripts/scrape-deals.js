@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+const https = require('https');
 
 // Load config
 const config = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/config.json'), 'utf8'));
@@ -10,8 +10,10 @@ console.log(`📊 Target: ${config.amazonConfig.dealsPerDay} deals under $${conf
 
 async function scrapeAmazonDeals() {
   try {
-    const apifyScriptPath = '/Users/varun.deshpande/.claude/skills/apify-ultimate-scraper/reference/scripts/run_actor.js';
-    const outputFile = path.join(__dirname, '../data/raw_deals.json');
+    const APIFY_TOKEN = process.env.APIFY_TOKEN;
+    if (!APIFY_TOKEN) {
+      throw new Error('APIFY_TOKEN environment variable is required');
+    }
 
     // Build Apify input
     const apifyInput = {
@@ -29,13 +31,35 @@ async function scrapeAmazonDeals() {
 
     console.log('🔍 Scraping Amazon bestsellers...');
 
-    // Run Apify scraper
-    const command = `node --env-file=/Users/varun.deshpande/.env ${apifyScriptPath} --actor "junglee/amazon-bestsellers" --input '${JSON.stringify(apifyInput)}' --format json --output ${outputFile}`;
+    // Start Apify actor run
+    const runResponse = await apifyRequest('POST', `/v2/acts/junglee~amazon-bestsellers/runs?token=${APIFY_TOKEN}`, apifyInput);
+    const runId = runResponse.data.id;
+    const datasetId = runResponse.data.defaultDatasetId;
 
-    execSync(command, { stdio: 'inherit' });
+    console.log(`Run ID: ${runId}`);
+    console.log(`Dataset ID: ${datasetId}`);
 
-    // Load and filter results
-    const rawDeals = JSON.parse(fs.readFileSync(outputFile, 'utf8'));
+    // Wait for run to complete
+    let status = 'RUNNING';
+    while (status === 'RUNNING') {
+      await sleep(5000);
+      const statusResponse = await apifyRequest('GET', `/v2/acts/junglee~amazon-bestsellers/runs/${runId}?token=${APIFY_TOKEN}`);
+      status = statusResponse.data.status;
+      console.log(`Status: ${status}`);
+    }
+
+    if (status !== 'SUCCEEDED') {
+      throw new Error(`Actor run ${status}`);
+    }
+
+    // Get results
+    const datasetResponse = await apifyRequest('GET', `/v2/datasets/${datasetId}/items?token=${APIFY_TOKEN}`);
+    const rawDeals = datasetResponse;
+
+    // Save raw data
+    const outputFile = path.join(__dirname, '../data/raw_deals.json');
+    fs.writeFileSync(outputFile, JSON.stringify(rawDeals, null, 2));
+
     console.log(`📦 Found ${rawDeals.length} products from Amazon`);
 
     // Filter by price range and format
@@ -97,6 +121,55 @@ async function scrapeAmazonDeals() {
     console.error('❌ Error scraping deals:', error.message);
     throw error;
   }
+}
+
+// Helper function to make Apify API requests
+function apifyRequest(method, endpoint, body = null) {
+  return new Promise((resolve, reject) => {
+    const options = {
+      hostname: 'api.apify.com',
+      path: endpoint,
+      method: method,
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    };
+
+    const req = https.request(options, (res) => {
+      let data = '';
+
+      res.on('data', (chunk) => {
+        data += chunk;
+      });
+
+      res.on('end', () => {
+        if (res.statusCode >= 200 && res.statusCode < 300) {
+          try {
+            resolve(JSON.parse(data));
+          } catch (e) {
+            resolve(data);
+          }
+        } else {
+          reject(new Error(`HTTP ${res.statusCode}: ${data}`));
+        }
+      });
+    });
+
+    req.on('error', (error) => {
+      reject(error);
+    });
+
+    if (body) {
+      req.write(JSON.stringify(body));
+    }
+
+    req.end();
+  });
+}
+
+// Helper sleep function
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 // Run if called directly
