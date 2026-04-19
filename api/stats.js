@@ -1,18 +1,13 @@
-import { readFileSync } from 'fs';
-import { join } from 'path';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
+const fs = require('fs');
+const path = require('path');
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-export default function handler(req, res) {
+module.exports = (req, res) => {
   try {
-    const dealsPath = join(__dirname, '..', 'data', 'deals.json');
-    const postedPath = join(__dirname, '..', 'data', 'posted.json');
+    const dealsPath = path.join(__dirname, '..', 'data', 'deals.json');
+    const postedPath = path.join(__dirname, '..', 'data', 'posted.json');
 
-    const deals = JSON.parse(readFileSync(dealsPath, 'utf8'));
-    const posted = JSON.parse(readFileSync(postedPath, 'utf8'));
+    const deals = JSON.parse(fs.readFileSync(dealsPath, 'utf8'));
+    const posted = JSON.parse(fs.readFileSync(postedPath, 'utf8'));
 
     const stats = {
       totalDeals: deals.length,
@@ -29,4 +24,4 @@ export default function handler(req, res) {
     console.error('Error loading stats:', error);
     res.status(500).json({ error: 'Failed to load stats', message: error.message });
   }
-}
+};

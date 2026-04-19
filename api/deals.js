@@ -1,21 +1,21 @@
-import { readFileSync } from 'fs';
-import { join } from 'path';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
+const fs = require('fs');
+const path = require('path');
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-export default function handler(req, res) {
+module.exports = (req, res) => {
   try {
-    const dealsPath = join(__dirname, '..', 'data', 'deals.json');
-    const deals = JSON.parse(readFileSync(dealsPath, 'utf8'));
+    // Read deals file from project root
+    const dealsPath = path.join(__dirname, '..', 'data', 'deals.json');
+    const deals = JSON.parse(fs.readFileSync(dealsPath, 'utf8'));
 
     res.setHeader('Content-Type', 'application/json');
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.status(200).json(deals);
   } catch (error) {
     console.error('Error loading deals:', error);
-    res.status(500).json({ error: 'Failed to load deals', message: error.message });
+    res.status(500).json({
+      error: 'Failed to load deals',
+      message: error.message,
+      path: path.join(__dirname, '..', 'data', 'deals.json')
+    });
   }
-}
+};
