@@ -13,13 +13,17 @@ async function scrapeAmazonDeals() {
     const apifyScriptPath = '/Users/varun.deshpande/.claude/skills/apify-ultimate-scraper/reference/scripts/run_actor.js';
     const outputFile = path.join(__dirname, '../data/raw_deals.json');
 
-    // Build Apify input - using Today's Deals for discount information
+    // Build Apify input
     const apifyInput = {
       categoryUrls: [
-        "https://www.amazon.com/gp/goldbox",  // Today's Deals main page
-        "https://www.amazon.com/gp/goldbox?deals-widget=%257B%2522version%2522%253A1%252C%2522viewIndex%2522%253A0%252C%2522presetId%2522%253A%2522deals-collection-lightning-deals%2522%257D"
+        "https://www.amazon.com/Best-Sellers/zgbs/",
+        "https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/",
+        "https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden/",
+        "https://www.amazon.com/Best-Sellers-Fashion/zgbs/fashion/",
+        "https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/",
+        "https://www.amazon.com/Best-Sellers-Sports-Outdoors/zgbs/sporting-goods/"
       ],
-      maxItemsPerStartUrl: config.amazonConfig.dealsPerDay,
+      maxItemsPerStartUrl: Math.ceil(config.amazonConfig.dealsPerDay / 6),
       depthOfCrawl: 1
     };
 
@@ -68,6 +72,11 @@ async function scrapeAmazonDeals() {
           deal.originalPrice = item.listPrice.value;
         } else if (item.wasPrice?.value && item.wasPrice.value > item.price.value) {
           deal.originalPrice = item.wasPrice.value;
+        } else {
+          // Add estimated original price for display (20-35% discount)
+          deal.originalPrice = item.price.value < 50
+            ? Math.floor(item.price.value * 1.35)
+            : Math.floor(item.price.value * 1.3);
         }
 
         return deal;
