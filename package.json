@@ -2,5 +2,8 @@
   "name": "amazingdeals17-website",
   "version": "1.0.0",
   "description": "Amazon deals website",
-  "type": "module"
+  "type": "commonjs",
+  "scripts": {
+    "scrape": "node scripts/scrape-deals.js"
+  }
 }
