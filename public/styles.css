@@ -558,7 +558,7 @@ footer a:hover {
     }
 
     .container {
-        padding: 0 20px;
+        padding: 0 15px;
     }
 
     .header-content {
@@ -575,14 +575,20 @@ footer a:hover {
         justify-content: center;
     }
 
+    .date-header {
+        padding: 25px 0 15px;
+    }
+
     .date-header h2 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .category-nav-wrapper {
         flex-direction: column;
         align-items: stretch;
         gap: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
     }
 
     .category-nav {
@@ -602,27 +608,75 @@ footer a:hover {
     .stats-info {
         width: 100%;
         justify-content: center;
+        font-size: 13px;
     }
 
+    /* Mobile: 2 columns for Instagram-like grid */
     .deals-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-bottom: 50px;
     }
 
     .deal-card {
-        border-radius: 12px;
+        border-radius: 10px;
     }
 
+    /* Compact image on mobile */
     .deal-image {
-        height: 280px;
+        height: 180px;
+    }
+
+    /* Compact content padding */
+    .deal-content {
+        padding: 12px;
+    }
+
+    .deal-category {
+        font-size: 10px;
+        padding: 3px 6px;
+        margin-bottom: 6px;
+    }
+
+    .deal-name {
+        font-size: 13px;
+        margin-bottom: 8px;
+        -webkit-line-clamp: 2;
+    }
+
+    .deal-rating {
+        font-size: 11px;
+        margin-bottom: 8px;
+    }
+
+    .deal-price {
+        margin-bottom: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .price-container {
+        gap: 6px;
     }
 
     .original-price {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .current-price {
-        font-size: 22px;
+        font-size: 20px;
+    }
+
+    .deal-badge {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+
+    .shop-btn {
+        padding: 9px;
+        font-size: 13px;
+        border-radius: 6px;
     }
 
     .scroll-top {
@@ -630,5 +684,41 @@ footer a:hover {
         right: 20px;
         width: 45px;
         height: 45px;
+    }
+
+    footer {
+        padding: 35px 20px;
+        margin-top: 40px;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 400px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .deals-grid {
+        gap: 10px;
+    }
+
+    .deal-image {
+        height: 160px;
+    }
+
+    .deal-content {
+        padding: 10px;
+    }
+
+    .deal-name {
+        font-size: 12px;
+    }
+
+    .current-price {
+        font-size: 18px;
+    }
+
+    .original-price {
+        font-size: 12px;
     }
 }
