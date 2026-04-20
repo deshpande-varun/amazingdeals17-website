@@ -136,11 +136,38 @@ function createDealCard(deal) {
     card.className = 'deal-card';
     card.onclick = () => window.open(deal.url, '_blank');
 
-    const img = document.createElement('img');
-    img.src = deal.imageUrl;
-    img.alt = deal.name;
-    img.className = 'deal-image';
-    img.loading = 'lazy';
+    // Try to load real image, fallback to placeholder
+    const imgContainer = document.createElement('div');
+    imgContainer.className = 'deal-image-container';
+
+    if (deal.imageUrl) {
+        const img = document.createElement('img');
+        img.className = 'deal-image';
+        img.src = deal.imageUrl;
+        img.alt = deal.name;
+        img.loading = 'lazy';
+
+        // Fallback to placeholder if image fails
+        img.onerror = () => {
+            img.remove();
+            const placeholder = document.createElement('div');
+            placeholder.className = 'deal-image-placeholder';
+            const placeholderText = document.createElement('span');
+            placeholderText.textContent = `📦 ${deal.category || 'Product'}`;
+            placeholder.appendChild(placeholderText);
+            imgContainer.appendChild(placeholder);
+        };
+
+        imgContainer.appendChild(img);
+    } else {
+        // No image URL, show placeholder
+        const placeholder = document.createElement('div');
+        placeholder.className = 'deal-image-placeholder';
+        const placeholderText = document.createElement('span');
+        placeholderText.textContent = `📦 ${deal.category || 'Product'}`;
+        placeholder.appendChild(placeholderText);
+        imgContainer.appendChild(placeholder);
+    }
 
     const content = document.createElement('div');
     content.className = 'deal-content';
@@ -205,7 +232,7 @@ function createDealCard(deal) {
     content.appendChild(priceDiv);
     content.appendChild(shopBtn);
 
-    card.appendChild(img);
+    card.appendChild(imgContainer);
     card.appendChild(content);
 
     return card;

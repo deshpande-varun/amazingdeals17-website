@@ -27,7 +27,7 @@ jobs:
 
       - name: Run scraper
         env:
-          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          RAINFOREST_API_KEY: ${{ secrets.RAINFOREST_API_KEY }}
         run: npm run scrape
 
       - name: Get current date
