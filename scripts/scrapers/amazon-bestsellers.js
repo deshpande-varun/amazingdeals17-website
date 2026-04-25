@@ -3,16 +3,21 @@ const https = require('https');
 const AFFILIATE_TAG = 'amazingd0f292-20';
 
 const CATEGORIES = [
-  { slug: 'electronics',    name: 'Electronics' },
-  { slug: 'home-garden',    name: 'Home & Kitchen' },
-  { slug: 'sporting-goods', name: 'Sports & Outdoors' },
-  { slug: 'fashion',        name: 'Fashion' },
-  { slug: 'beauty',         name: 'Beauty' },
-  { slug: 'toys-and-games', name: 'Toys & Games' },
-  { slug: 'kitchen',        name: 'Kitchen' },
-  { slug: 'pet-supplies',   name: 'Pet Supplies' },
-  { slug: 'tools',          name: 'Tools & Home Improvement' },
-  { slug: 'office-products', name: 'Office Products' },
+  { slug: 'electronics',          name: 'Electronics' },
+  { slug: 'home-garden',          name: 'Home & Kitchen' },
+  { slug: 'sporting-goods',       name: 'Sports & Outdoors' },
+  { slug: 'fashion',              name: 'Fashion' },
+  { slug: 'beauty',               name: 'Beauty' },
+  { slug: 'toys-and-games',       name: 'Toys & Games' },
+  { slug: 'kitchen',              name: 'Kitchen' },
+  { slug: 'pet-supplies',         name: 'Pet Supplies' },
+  { slug: 'tools',                name: 'Tools & Home Improvement' },
+  { slug: 'office-products',      name: 'Office Products' },
+  { slug: 'health-personal-care', name: 'Health & Personal Care' },
+  { slug: 'automotive',           name: 'Automotive' },
+  { slug: 'garden',               name: 'Garden & Outdoor' },
+  { slug: 'baby-products',        name: 'Baby' },
+  { slug: 'video-games',          name: 'Video Games' },
 ];
 
 const HEADERS = {

@@ -6,14 +6,27 @@ const { scrapeSlickdeals } = require('./scrapers/slickdeals');
 const { scrapeGetMattsDeals } = require('./scrapers/getmattsdeals');
 
 const config = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/config.json'), 'utf8'));
-const TARGET = 100;
+const MAX_TOTAL = 1000;
 const MAX_PRICE = config.amazonConfig.priceRange.max || 100;
 const AFFILIATE_TAG = config.amazonConfig.affiliateTag;
 
-console.log('Starting deal scraper — target: ' + TARGET + ' deals under $' + MAX_PRICE);
+console.log('Starting deal scraper — cap: ' + MAX_TOTAL + ' deals under $' + MAX_PRICE);
 
 async function runAll() {
-  // Amazon runs first (sequential, polite delays built in), then deal sites in parallel
+  // Load existing accumulated deals
+  const dealsFile = path.join(__dirname, '../data/deals.json');
+  let existingDeals = [];
+  if (fs.existsSync(dealsFile)) {
+    try {
+      const raw = fs.readFileSync(dealsFile, 'utf8');
+      existingDeals = JSON.parse(raw);
+      console.log('Loaded ' + existingDeals.length + ' existing deals');
+    } catch (e) {
+      console.warn('Could not parse existing deals.json, starting fresh');
+    }
+  }
+
+  // Scrape today's deals — Amazon first (has built-in polite delays), then others in parallel
   let amazonDeals = [];
   try {
     amazonDeals = await scrapeAmazonBestsellers(10);
@@ -26,44 +39,44 @@ async function runAll() {
     scrapeGetMattsDeals(),
   ]);
 
-  const allDeals = [...amazonDeals];
+  const todayRaw = [...amazonDeals];
   const labels = ['Slickdeals', 'GetMattsDeals'];
-
   results.forEach((r, i) => {
     if (r.status === 'fulfilled') {
       console.log(labels[i] + ': ' + r.value.length + ' deals');
-      allDeals.push(...r.value);
+      todayRaw.push(...r.value);
     } else {
       console.warn(labels[i] + ' failed: ' + r.reason.message);
     }
   });
 
-  // Deduplicate by ASIN — first seen wins (Amazon RSS has priority)
-  const seen = new Set();
-  const deduped = [];
-  for (const deal of allDeals) {
-    if (deal.asin && !seen.has(deal.asin)) {
-      seen.add(deal.asin);
-      deduped.push(deal);
-    }
+  // Deduplicate today's batch and apply filters
+  const seenToday = new Set();
+  const todayDeals = [];
+  for (const deal of todayRaw) {
+    if (!deal.asin || seenToday.has(deal.asin)) continue;
+    if (!deal.price || deal.price <= 0 || deal.price > MAX_PRICE) continue;
+    seenToday.add(deal.asin);
+    todayDeals.push({
+      ...deal,
+      url: 'https://www.amazon.com/dp/' + deal.asin + '?tag=' + AFFILIATE_TAG,
+    });
   }
 
-  // Filter price range and ensure affiliate tag is on every URL
-  const filtered = deduped
-    .filter(d => d.price > 0 && d.price <= MAX_PRICE)
-    .map(d => ({
-      ...d,
-      url: 'https://www.amazon.com/dp/' + d.asin + '?tag=' + AFFILIATE_TAG,
-    }))
-    .slice(0, TARGET);
+  console.log('New deals today: ' + todayDeals.length);
 
-  console.log('Total after dedupe + filter: ' + filtered.length + ' deals');
+  // Remove from existing any ASINs we're refreshing today, then prepend today's deals.
+  // If over cap, drop the oldest from the tail.
+  const existingFiltered = existingDeals.filter(d => !seenToday.has(d.asin));
+  const merged = [...todayDeals, ...existingFiltered].slice(0, MAX_TOTAL);
 
-  const dealsFile = path.join(__dirname, '../data/deals.json');
-  fs.writeFileSync(dealsFile, JSON.stringify(filtered, null, 2));
-  console.log('Saved ' + filtered.length + ' deals to deals.json');
+  console.log('Total after merge: ' + merged.length + ' deals (dropped ' +
+    Math.max(0, todayDeals.length + existingFiltered.length - MAX_TOTAL) + ' oldest)');
 
-  return filtered;
+  fs.writeFileSync(dealsFile, JSON.stringify(merged, null, 2));
+  console.log('Saved ' + merged.length + ' deals to deals.json');
+
+  return merged;
 }
 
 if (require.main === module) {
