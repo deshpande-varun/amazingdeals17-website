@@ -4,7 +4,7 @@
 Amazon affiliate deals website. Scrapes 100+ deals/day from Amazon bestsellers + Slickdeals, accumulates up to 1000 deals, deploys automatically to Vercel daily.
 
 ## Domain & Hosting
-- **Live site:** amazonbestdealz.com (also amazingdeals17.vercel.app)
+- **Live site:** topdealzdaily.com (also amazingdeals17.vercel.app, amazonbestdealz.com still points here)
 - **Hosting:** Vercel — project `amazingdeals17-website`
 - **Repo:** github.com/deshpande-varun/amazingdeals17-website
 
