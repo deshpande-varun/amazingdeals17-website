@@ -4,6 +4,6 @@
   "description": "Amazon deals website",
   "type": "commonjs",
   "scripts": {
-    "scrape": "node scripts/scrape-deals-rainforest.js"
+    "scrape": "node scripts/scrape-all.js"
   }
 }
