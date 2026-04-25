@@ -1,420 +1,20 @@
 [
   {
-<<<<<<< HEAD
-    "id": "B08JHCVHTY",
-    "name": "blink plus plan with monthly auto-renewal",
-    "url": "https://www.amazon.com/dp/B08JHCVHTY?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B08JHCVHTY",
-    "asin": "B08JHCVHTY",
-    "price": 11.99,
-    "currency": "$",
-    "rating": 4.4,
-    "reviewCount": 274876,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/31YHGbJsldL._AC_UL300_SR300,200_.png",
-    "category": "electronics",
-    "position": 1,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 16
-  },
-  {
-    "id": "B0DCH8VDXF",
-    "name": "Apple EarPods Headphones with USB-C Plug, Wired Ear Buds with Built-in Remote to Control Music, Phone Calls, and Volume",
-    "url": "https://www.amazon.com/dp/B0DCH8VDXF?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0DCH8VDXF",
-    "asin": "B0DCH8VDXF",
-    "price": 19,
-    "currency": "$",
-    "rating": 4.6,
-    "reviewCount": 12645,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/513OSdW4elL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 2,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 25
-  },
-  {
-    "id": "B0GJTFXNRX",
-    "name": "Apple AirTag (2nd Generation): Tracker for Keychain, Wallet, and More; Locator with Sound; Simple One-Tap Setup with iPhone o",
-    "url": "https://www.amazon.com/dp/B0GJTFXNRX?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0GJTFXNRX",
-    "asin": "B0GJTFXNRX",
-    "price": 29,
-    "currency": "$",
-    "rating": 4.6,
-    "reviewCount": 2545,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61Qd9Z9caRL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 3,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 39
-  },
-  {
-    "id": "B0DGHMNQ5Z",
-    "name": "Apple AirPods 4 Wireless Earbuds, Bluetooth Headphones, Personalized Spatial Audio, Sweat and Water Resistant, USB-C Charging",
-    "url": "https://www.amazon.com/dp/B0DGHMNQ5Z?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0DGHMNQ5Z",
-    "asin": "B0DGHMNQ5Z",
-    "price": 99,
-    "currency": "$",
-    "rating": 4.6,
-    "reviewCount": 28290,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61iBtxCUabL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 4,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 133
-  },
-  {
-    "id": "B0DXXYS4BJ",
-    "name": "Roku Streaming Stick HD — HD Streaming Device for TV with Roku Voice Remote, Free & Live TV",
-    "url": "https://www.amazon.com/dp/B0DXXYS4BJ?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0DXXYS4BJ",
-    "asin": "B0DXXYS4BJ",
-    "price": 24.24,
-    "currency": "$",
-    "rating": 4.7,
-    "reviewCount": 18142,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71GUOcJCzSL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 6,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 32
-  },
-  {
-    "id": "B0DGQVYW2K",
-    "name": "Blink Video Doorbell (newest model) – Head-to-toe HD view, two-year battery life, and simple setup. Required Sync Module not ",
-    "url": "https://www.amazon.com/dp/B0DGQVYW2K?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0DGQVYW2K",
-    "asin": "B0DGQVYW2K",
-    "price": 29.99,
-=======
     "id": "B0DCH8VDXF",
     "asin": "B0DCH8VDXF",
     "name": "Apple EarPods Headphones with USB-C Plug, Wired Ear Buds with Built-in Remote to Control Music, Phone Calls, and Volume",
     "url": "https://www.amazon.com/dp/B0DCH8VDXF?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0DCH8VDXF",
     "price": 11.99,
-    "originalPrice": 15,
->>>>>>> f4214ab (Replace Apify/Rainforest scrapers with zero-dependency scraper)
+    "originalPrice": 16,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/513OSdW4elL._AC_UL300_SR300,200_.jpg",
     "category": "Electronics",
     "couponCode": null,
     "source": "amazon",
     "rating": 4.4,
-<<<<<<< HEAD
-    "reviewCount": 10489,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51AwA5Ls1CL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 7,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 40
-  },
-  {
-    "id": "B08R6S1M1K",
-    "name": "Wall Charger, Surge Protector, QINLIANF 5 Outlet Extender with 4 USB Charging Ports, 3-Sided 1680J Power Strip Multi Plug Ada",
-    "url": "https://www.amazon.com/dp/B08R6S1M1K?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B08R6S1M1K",
-    "asin": "B08R6S1M1K",
-    "price": 9.98,
-    "currency": "$",
-    "rating": 4.7,
-    "reviewCount": 112033,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51lGPGOkjUL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 8,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 13
-  },
-  {
-    "id": "B0F7Z4QZTT",
-    "name": "Amazon Fire TV Stick 4K Plus (newest model) with AI-powered Fire TV Search, Wi-Fi 6, stream hundreds of thousands of movies a",
-    "url": "https://www.amazon.com/dp/B0F7Z4QZTT?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0F7Z4QZTT",
-    "asin": "B0F7Z4QZTT",
-    "price": 29.99,
-    "currency": "$",
-    "rating": 4.7,
-    "reviewCount": 108393,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51WtNy0OxLL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 9,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 40
-  },
-  {
-    "id": "B0CQMRKRV5",
-    "name": "Amazon Fire TV Stick HD, free and live TV, Alexa Voice Remote, smart home controls, HD streaming",
-    "url": "https://www.amazon.com/dp/B0CQMRKRV5?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0CQMRKRV5",
-    "asin": "B0CQMRKRV5",
-    "price": 19.99,
-    "currency": "$",
-    "rating": 4.7,
-    "reviewCount": 64615,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61nyRfbgaLL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 11,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 26
-  },
-  {
-    "id": "B0C6W3D4RM",
-    "name": "Amazon Fire TV Stick 4K Select (newest model), start streaming in 4K, AI-powered search, and free & live TV, find shows faste",
-    "url": "https://www.amazon.com/dp/B0C6W3D4RM?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0C6W3D4RM",
-    "asin": "B0C6W3D4RM",
-    "price": 24.99,
-    "currency": "$",
-    "rating": 4.2,
-    "reviewCount": 8250,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61r3G3vAhBL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 13,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 33
-  },
-  {
-    "id": "B09B8V1LZ3",
-    "name": "Amazon Echo Dot (newest model) - Vibrant sounding speaker, Designed for Alexa+, Great for bedrooms, dining rooms and offices,",
-    "url": "https://www.amazon.com/dp/B09B8V1LZ3?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B09B8V1LZ3",
-    "asin": "B09B8V1LZ3",
-    "price": 49.99,
-    "currency": "$",
-    "rating": 4.7,
-    "reviewCount": 191042,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71hNp8d9WvL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 14,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 67
-  },
-  {
-    "id": "B09PDLBFKY",
-    "name": "6 Ft Surge Protector Power Strip - 8 Widely Outlets with 4 USB Ports, 3 Side Outlet Extender with 6 Feet Extension Cord, Flat",
-    "url": "https://www.amazon.com/dp/B09PDLBFKY?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B09PDLBFKY",
-    "asin": "B09PDLBFKY",
-    "price": 9.99,
-    "currency": "$",
-    "rating": 4.6,
-    "reviewCount": 48609,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61ktZoGBpVL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 16,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 13
-  },
-  {
-    "id": "B09Z6Q2MLC",
-    "name": "(Pack of 2) Replacement Remote Control Only for Roku TV, Compatible for TCL Roku/Hisense Roku/Onn Roku/Sharp Roku/Element Rok",
-    "url": "https://www.amazon.com/dp/B09Z6Q2MLC?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B09Z6Q2MLC",
-    "asin": "B09Z6Q2MLC",
-    "price": 9.97,
-    "currency": "$",
-    "rating": 0,
-    "reviewCount": 0,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71Z6Vs6+hDL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 17,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 13
-  },
-  {
-    "id": "B00EB4ADQW",
-    "name": "FUJIFILM Instax Mini Instant Film Twin Pack (White), 20 Photos",
-    "url": "https://www.amazon.com/dp/B00EB4ADQW?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B00EB4ADQW",
-    "asin": "B00EB4ADQW",
-    "price": 16.98,
-    "currency": "$",
-    "rating": 4.8,
-    "reviewCount": 111131,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61dgEk4GNlL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 18,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 22
-  },
-  {
-    "id": "B0BQPNMXQV",
-    "name": "JBL Vibe Beam - True Wireless JBL Deep Bass Sound Earbuds, Bluetooth 5.2, Water & Dust Resistant, Hands-Free Call with VoiceA",
-    "url": "https://www.amazon.com/dp/B0BQPNMXQV?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0BQPNMXQV",
-    "asin": "B0BQPNMXQV",
-    "price": 29.95,
-    "currency": "$",
-    "rating": 4.3,
-    "reviewCount": 37233,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41+1Csr1pSL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 19,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 40
-  },
-  {
-    "id": "B09DT48V16",
-    "name": "TAGRY Bluetooth Headphones True Wireless Earbuds 60H Playback LED Power Display Earphones with Wireless Charging Case IPX5 Wa",
-    "url": "https://www.amazon.com/dp/B09DT48V16?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B09DT48V16",
-    "asin": "B09DT48V16",
-    "price": 25.99,
-    "currency": "$",
-    "rating": 4.4,
-    "reviewCount": 85277,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61uEvVoizoL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 20,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 35
-  },
-  {
-    "id": "B0BJ1SWDNB",
-    "name": "Power Strip Surge Protector, Olcorife Ultra Thin Flat Plug Extension Cord 5ft, 6 Outlets 3 USB Ports(1 USB C), 3 Sided Outlet",
-    "url": "https://www.amazon.com/dp/B0BJ1SWDNB?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0BJ1SWDNB",
-    "asin": "B0BJ1SWDNB",
-    "price": 9.99,
-    "currency": "$",
-    "rating": 4.7,
-    "reviewCount": 6174,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/6103UT0KiyL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 21,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 13
-  },
-  {
-    "id": "B0BQS9Y69G",
-    "name": "Roku Voice Remote | Replacement TV Remote Control with Voice Control, Simple Setup, & Pre-Set App Shortcuts - Compatible with",
-    "url": "https://www.amazon.com/dp/B0BQS9Y69G?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0BQS9Y69G",
-    "asin": "B0BQS9Y69G",
-    "price": 19.88,
-    "currency": "$",
-    "rating": 4.6,
-    "reviewCount": 22415,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71JvQ68q1yL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 22,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 26
-  },
-  {
-    "id": "B0D9WVWXR1",
-    "name": "Oura Ring 4 Sizing Kit - Size Before You Buy The Oura Ring 4 - Unique Sizing, Not Standard US Ring Sizes - Receive Credit for",
-    "url": "https://www.amazon.com/dp/B0D9WVWXR1?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0D9WVWXR1",
-    "asin": "B0D9WVWXR1",
-    "price": 10,
-    "currency": "$",
-    "rating": 4.5,
-    "reviewCount": 3305,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/518Qh+G3I5L._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 23,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 13
-  },
-  {
-    "id": "B0BP9SNVH9",
-    "name": "Amazon Fire TV Stick 4K Max streaming device, with AI-powered Fire TV Search, supports Wi-Fi 6E, free & live TV without cable",
-    "url": "https://www.amazon.com/dp/B0BP9SNVH9?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0BP9SNVH9",
-    "asin": "B0BP9SNVH9",
-    "price": 39.99,
-    "currency": "$",
-    "rating": 4.6,
-    "reviewCount": 76215,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61KoIgcXSKL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 24,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 53
-  },
-  {
-    "id": "B09FT58QQP",
-    "name": "TOZO A1 Wireless Earbuds Bluetooth 5.3 Light Weight in Ear IPX5 Waterproof Headphones 2 Mic for AI Calls, Immersive Premium S",
-    "url": "https://www.amazon.com/dp/B09FT58QQP?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B09FT58QQP",
-    "asin": "B09FT58QQP",
-    "price": 12.31,
-    "currency": "$",
-    "rating": 4.3,
-    "reviewCount": 112892,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81+4jNKVFgL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 26,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 16
-  },
-  {
-    "id": "B0BTYCRJSS",
-    "name": "Soundcore by Anker P20i True Wireless Earbuds, 10mm Drivers with Big Bass, Bluetooth 5.3, 30H Long Playtime, Water-Resistant,",
-    "url": "https://www.amazon.com/dp/B0BTYCRJSS?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0BTYCRJSS",
-    "asin": "B0BTYCRJSS",
-    "price": 19.98,
-    "currency": "$",
-    "rating": 4.4,
-    "reviewCount": 103030,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51Yya2WtvkL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 27,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 26
-  },
-  {
-    "id": "B0BS1PRC4L",
-    "name": "Sony WH-CH520 Wireless Headphones Bluetooth On-Ear Headset with Microphone and up to 50 Hours Battery Life with Quick Chargin",
-    "url": "https://www.amazon.com/dp/B0BS1PRC4L?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0BS1PRC4L",
-    "asin": "B0BS1PRC4L",
-    "price": 36.95,
-    "currency": "$",
-    "rating": 4.5,
-    "reviewCount": 31558,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41lArSiD5hL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 28,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 49
-  },
-  {
-    "id": "B0C3HCD34R",
-    "name": "Soundcore by Anker Q20i Hybrid Active Noise Cancelling Headphones, Wireless Over-Ear Bluetooth, 40H Long ANC Playtime, Hi-Res",
-    "url": "https://www.amazon.com/dp/B0C3HCD34R?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0C3HCD34R",
-    "asin": "B0C3HCD34R",
-    "price": 44.99,
-=======
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:50.858Z",
+    "scrapedAt": "2026-04-25T19:34:37.286Z",
     "status": "pending"
   },
   {
@@ -424,297 +24,15 @@
     "url": "https://www.amazon.com/dp/B0GJTFXNRX?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0GJTFXNRX",
     "price": 19,
-    "originalPrice": 26,
->>>>>>> f4214ab (Replace Apify/Rainforest scrapers with zero-dependency scraper)
+    "originalPrice": 24,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61Qd9Z9caRL._AC_UL300_SR300,200_.jpg",
     "category": "Electronics",
     "couponCode": null,
     "source": "amazon",
     "rating": 4.6,
-<<<<<<< HEAD
-    "reviewCount": 61135,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51CnDMbXZzL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 30,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 60
-  },
-  {
-    "id": "B0CXGXT6W8",
-    "name": "JLab Go Air Pop+ True Wireless Earbuds, in Ear Headphones, Bluetooth Earphones, 35H Playtime Ear Buds, Bluetooth Earbuds with",
-    "url": "https://www.amazon.com/dp/B0CXGXT6W8?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0CXGXT6W8",
-    "asin": "B0CXGXT6W8",
-    "price": 24.88,
-    "currency": "$",
-    "rating": 4.5,
-    "reviewCount": 5922,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61KVAfSonkL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 31,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 33
-  },
-  {
-    "id": "B07FW3GTXB",
-    "name": "Alex Tech 10ft - 1/2 inch Cord Protector Wire Loom Tubing Cable Sleeve Split Sleeving For USB Cable Power Cord Audio Video Ca",
-    "url": "https://www.amazon.com/dp/B07FW3GTXB?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B07FW3GTXB",
-    "asin": "B07FW3GTXB",
-    "price": 8.99,
-    "currency": "$",
-    "rating": 4.7,
-    "reviewCount": 82414,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71t6eXtVD6L._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 32,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 12
-  },
-  {
-    "id": "B0DZ254SSR",
-    "name": "10Ft Extension Cord with Multiple Outlets, Flat Plug Surge Protector Power Strip 10 Ft Long Cord, 8 Outlets & 4 USB Ports (2 ",
-    "url": "https://www.amazon.com/dp/B0DZ254SSR?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0DZ254SSR",
-    "asin": "B0DZ254SSR",
-    "price": 12.99,
-    "currency": "$",
-    "rating": 4.8,
-    "reviewCount": 4671,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/612NrGLfOqL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 33,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 17
-  },
-  {
-    "id": "B01MTB55WH",
-    "name": "Anker Soundcore 2 Portable Bluetooth Speaker with Stereo Sound, Bluetooth 5, Bassup, IPX7 Waterproof, 24-Hour Playtime, Wirel",
-    "url": "https://www.amazon.com/dp/B01MTB55WH?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B01MTB55WH",
-    "asin": "B01MTB55WH",
-    "price": 29.99,
-    "currency": "$",
-    "rating": 4.6,
-    "reviewCount": 149548,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71jjggEx2XL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 34,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 40
-  },
-  {
-    "id": "B092J8LPWR",
-    "name": "Surge Protector Power Strip - HANYCONY 8 Outlets 4 USB (2 USB C) Charging Ports, Multi Plug Outlet Extender, 5Ft Braided Exte",
-    "url": "https://www.amazon.com/dp/B092J8LPWR?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B092J8LPWR",
-    "asin": "B092J8LPWR",
-    "price": 11.99,
-    "currency": "$",
-    "rating": 4.8,
-    "reviewCount": 56011,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61q9hmplGFL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 35,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 16
-  },
-  {
-    "id": "B0C2Z4L3S6",
-    "name": "Zip Ties Assorted Sizes(4”+6”+8”+12”), 400 Pack, Black Cable Ties, UV Resistant Wire Ties by ANOSON",
-    "url": "https://www.amazon.com/dp/B0C2Z4L3S6?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0C2Z4L3S6",
-    "asin": "B0C2Z4L3S6",
-    "price": 6.99,
-    "currency": "$",
-    "rating": 4.6,
-    "reviewCount": 15380,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81QjAjamInL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 36,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 9
-  },
-  {
-    "id": "B0BLTYNJCK",
-    "name": "TESSAN Surge Protector Power Strip, 5 Ft Flat Plug Extension Cord with 3 USB (1 USB C) 8 Outlets, 1250W, 900J Protection, 3 S",
-    "url": "https://www.amazon.com/dp/B0BLTYNJCK?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0BLTYNJCK",
-    "asin": "B0BLTYNJCK",
-    "price": 20.69,
-    "currency": "$",
-    "rating": 4.8,
-    "reviewCount": 13388,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61Pg83pxUML._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 37,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 27
-  },
-  {
-    "id": "B0B7B6KLH3",
-    "name": "【Pack of 2】 New Universal Remote for All Samsung TV Remote, Replacement Compatible for All Samsung Smart TV, LED, LCD, HDTV, ",
-    "url": "https://www.amazon.com/dp/B0B7B6KLH3?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0B7B6KLH3",
-    "asin": "B0B7B6KLH3",
-    "price": 9.36,
-    "currency": "$",
-    "rating": 4.5,
-    "reviewCount": 19950,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71D1l4Dne5L._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 39,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 12
-  },
-  {
-    "id": "B08MTBCXWX",
-    "name": "6Ft Power Strip Surge Protector - Yintar Extension Cord with 6 AC Outlets and 3 USB Ports for for Home, Office, Dorm Essentia",
-    "url": "https://www.amazon.com/dp/B08MTBCXWX?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B08MTBCXWX",
-    "asin": "B08MTBCXWX",
-    "price": 12.99,
-    "currency": "$",
-    "rating": 4.7,
-    "reviewCount": 28931,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61WFHGJ33qL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 41,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 17
-  },
-  {
-    "id": "B0FHWGB7FW",
-    "name": "Wireless Earbuds, Bluetooth 5.4 Headphones Bass Stereo, Ear Buds with Noise Cancelling Mic, LED Display in Ear Earphones Clea",
-    "url": "https://www.amazon.com/dp/B0FHWGB7FW?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0FHWGB7FW",
-    "asin": "B0FHWGB7FW",
-    "price": 21.99,
-    "currency": "$",
-    "rating": 4.5,
-    "reviewCount": 55994,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71sWRy5QxIL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 42,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 29
-  },
-  {
-    "id": "B0DDZN76T9",
-    "name": "Replacement for Samsung TV Remote, for All 2019-2025 Samsung Remote Control for Smart TV with Voice Control. No Solarcell. 2-",
-    "url": "https://www.amazon.com/dp/B0DDZN76T9?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0DDZN76T9",
-    "asin": "B0DDZN76T9",
-    "price": 18.97,
-    "currency": "$",
-    "rating": 4.4,
-    "reviewCount": 7471,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41pLgfbU-mL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 43,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 25
-  },
-  {
-    "id": "B0CTNTFBNX",
-    "name": "JBL Go 4 - Ultra-Portable, Waterproof and Dustproof Bluetooth Speaker, Big JBL Pro Sound with Punchy bass, 7-Hour Built-in Ba",
-    "url": "https://www.amazon.com/dp/B0CTNTFBNX?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0CTNTFBNX",
-    "asin": "B0CTNTFBNX",
-    "price": 39.95,
-    "currency": "$",
-    "rating": 4.8,
-    "reviewCount": 15635,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71yLyiSmJRL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 44,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 53
-  },
-  {
-    "id": "B0DC3PZLRL",
-    "name": "ORQRQO Replacement Remote for All Fire Series, TV Stick (HD, 4K, 4K Max, Lite), TV Cube and Omni, Insignia, Toshiba, Smart TV",
-    "url": "https://www.amazon.com/dp/B0DC3PZLRL?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0DC3PZLRL",
-    "asin": "B0DC3PZLRL",
-    "price": 8.98,
-    "currency": "$",
-    "rating": 4.1,
-    "reviewCount": 5385,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51INX00a8rL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 45,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 12
-  },
-  {
-    "id": "B09LYF2ST7",
-    "name": "BERIBES Bluetooth Headphones Over Ear, 65H Playtime and 6 EQ Music Modes Wireless Headphones with Microphone, HiFi Stereo Fol",
-    "url": "https://www.amazon.com/dp/B09LYF2ST7?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B09LYF2ST7",
-    "asin": "B09LYF2ST7",
-    "price": 19.99,
-    "currency": "$",
-    "rating": 4.5,
-    "reviewCount": 53659,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71F2ccIPPLL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 46,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 26
-  },
-  {
-    "id": "B0DFWRY3KQ",
-    "name": "4 Pairs Replacement Ear Tips for AirPods Pro 2nd/1st Generation with Portable Storage Box & Cleaner Pen,Noise Reduction Holew",
-    "url": "https://www.amazon.com/dp/B0DFWRY3KQ?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0DFWRY3KQ",
-    "asin": "B0DFWRY3KQ",
-    "price": 6.98,
-    "currency": "$",
-    "rating": 4.5,
-    "reviewCount": 4490,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51w6BaEGglL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 47,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 9
-  },
-  {
-    "id": "B09FLNSYDZ",
-    "name": "bmani Ear Buds Wireless Earbuds Bluetooth Headphones with 80H Playtime LED Display Case, Over-Ear Hook with Mic, Stereo Sound",
-    "url": "https://www.amazon.com/dp/B09FLNSYDZ?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B09FLNSYDZ",
-    "asin": "B09FLNSYDZ",
-    "price": 24.67,
-    "currency": "$",
-    "rating": 4.4,
-    "reviewCount": 53615,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71GPFE2yHGL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 48,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 33
-=======
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:50.859Z",
+    "scrapedAt": "2026-04-25T19:34:37.287Z",
     "status": "pending"
   },
   {
@@ -732,7 +50,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": 28316,
-    "scrapedAt": "2026-04-25T19:32:50.859Z",
+    "scrapedAt": "2026-04-25T19:34:37.287Z",
     "status": "pending"
   },
   {
@@ -742,7 +60,7 @@
     "url": "https://www.amazon.com/dp/B0FQFB8FMG?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0FQFB8FMG",
     "price": 99,
-    "originalPrice": 136,
+    "originalPrice": 125,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61solmQSSlL._AC_UL300_SR300,200_.jpg",
     "category": "Electronics",
@@ -750,7 +68,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": 8519,
-    "scrapedAt": "2026-04-25T19:32:50.859Z",
+    "scrapedAt": "2026-04-25T19:34:37.287Z",
     "status": "pending"
   },
   {
@@ -760,7 +78,7 @@
     "url": "https://www.amazon.com/dp/B0DGQVYW2K?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0DGQVYW2K",
     "price": 24.24,
-    "originalPrice": 30,
+    "originalPrice": 32,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51AwA5Ls1CL._AC_UL300_SR300,200_.jpg",
     "category": "Electronics",
@@ -768,7 +86,7 @@
     "source": "amazon",
     "rating": 4.7,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:50.859Z",
+    "scrapedAt": "2026-04-25T19:34:37.287Z",
     "status": "pending"
   },
   {
@@ -778,7 +96,7 @@
     "url": "https://www.amazon.com/dp/B0F7Z4QZTT?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0F7Z4QZTT",
     "price": 29.99,
-    "originalPrice": 40,
+    "originalPrice": 38,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51WtNy0OxLL._AC_UL300_SR300,200_.jpg",
     "category": "Electronics",
@@ -786,7 +104,7 @@
     "source": "amazon",
     "rating": 4.4,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:50.859Z",
+    "scrapedAt": "2026-04-25T19:34:37.287Z",
     "status": "pending"
   },
   {
@@ -796,7 +114,7 @@
     "url": "https://www.amazon.com/dp/B08R6S1M1K?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B08R6S1M1K",
     "price": 29.99,
-    "originalPrice": 40,
+    "originalPrice": 37,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51lGPGOkjUL._AC_UL300_SR300,200_.jpg",
     "category": "Electronics",
@@ -804,7 +122,7 @@
     "source": "amazon",
     "rating": 4.7,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:50.859Z",
+    "scrapedAt": "2026-04-25T19:34:37.287Z",
     "status": "pending"
   },
   {
@@ -814,7 +132,7 @@
     "url": "https://www.amazon.com/dp/B0CQMRKRV5?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0CQMRKRV5",
     "price": 9.98,
-    "originalPrice": 12,
+    "originalPrice": 13,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61nyRfbgaLL._AC_UL300_SR300,200_.jpg",
     "category": "Electronics",
@@ -822,7 +140,7 @@
     "source": "amazon",
     "rating": 4.7,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:50.859Z",
+    "scrapedAt": "2026-04-25T19:34:37.287Z",
     "status": "pending"
   },
   {
@@ -832,7 +150,7 @@
     "url": "https://www.amazon.com/dp/B0DZ7871B8?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0DZ7871B8",
     "price": 19.99,
-    "originalPrice": 25,
+    "originalPrice": 27,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61F0JkimwfL._AC_UL300_SR300,200_.jpg",
     "category": "Electronics",
@@ -840,7 +158,7 @@
     "source": "amazon",
     "rating": 4.7,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:50.859Z",
+    "scrapedAt": "2026-04-25T19:34:37.287Z",
     "status": "pending"
   },
   {
@@ -858,7 +176,7 @@
     "source": "amazon",
     "rating": 4.5,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:50.859Z",
+    "scrapedAt": "2026-04-25T19:34:37.287Z",
     "status": "pending"
   },
   {
@@ -868,7 +186,7 @@
     "url": "https://www.amazon.com/dp/B01M16WBW1?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B01M16WBW1",
     "price": 10.96,
-    "originalPrice": 15,
+    "originalPrice": 14,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61o6SkL3DOL._AC_UL300_SR300,200_.jpg",
     "category": "Home & Kitchen",
@@ -876,7 +194,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:53.386Z",
+    "scrapedAt": "2026-04-25T19:34:39.739Z",
     "status": "pending"
   },
   {
@@ -886,7 +204,7 @@
     "url": "https://www.amazon.com/dp/B0DQ59R1LB?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0DQ59R1LB",
     "price": 24.99,
-    "originalPrice": 33,
+    "originalPrice": 31,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/815osJgqacL._AC_UL300_SR300,200_.jpg",
     "category": "Home & Kitchen",
@@ -894,60 +212,8 @@
     "source": "amazon",
     "rating": 4.5,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:53.386Z",
+    "scrapedAt": "2026-04-25T19:34:39.740Z",
     "status": "pending"
->>>>>>> f4214ab (Replace Apify/Rainforest scrapers with zero-dependency scraper)
-  },
-  {
-    "id": "B01KBEOL5E",
-    "name": "Amazon Basics Full Motion Articulating TV Wall Mount, with Swivel and Tilt, for 26\" to 55\" TVs and Flat Panels up to 80 Lbs, ",
-    "url": "https://www.amazon.com/dp/B01KBEOL5E?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B01KBEOL5E",
-    "asin": "B01KBEOL5E",
-    "price": 19.94,
-    "currency": "$",
-    "rating": 4.6,
-    "reviewCount": 60974,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71geD2eIksL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 49,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 26
-  },
-  {
-    "id": "B0CRTYZG5C",
-    "name": "Soundcore P30i by Anker Noise Cancelling Earbuds, Strong and Smart Noise Cancelling, Powerful Bass, 45H Playtime, 2-in-1 Case",
-    "url": "https://www.amazon.com/dp/B0CRTYZG5C?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0CRTYZG5C",
-    "asin": "B0CRTYZG5C",
-    "price": 27.99,
-    "currency": "$",
-    "rating": 4.4,
-    "reviewCount": 31216,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51HbL1WS+KL._AC_UL300_SR300,200_.jpg",
-    "category": "electronics",
-    "position": 50,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 37
-  },
-  {
-    "id": "B00E4GACB8",
-    "name": "TERRO Ant Killer Bait Stations T300B - Liquid Bait to Eliminate Ants - Bait System - 12 Count Stations for Effective Indoor A",
-    "url": "https://www.amazon.com/dp/B00E4GACB8?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B00E4GACB8",
-    "asin": "B00E4GACB8",
-    "price": 10.96,
-    "currency": "$",
-    "rating": 4.6,
-    "reviewCount": 151198,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81GTDsmO9IL._AC_UL300_SR300,200_.jpg",
-    "category": "home-garden",
-    "position": 1,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 14
   },
   {
     "id": "B0BZYCJK89",
@@ -958,135 +224,23 @@
     "price": 6.29,
     "originalPrice": 8,
     "currency": "$",
-<<<<<<< HEAD
-    "rating": 4.7,
-    "reviewCount": 118381,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61sS-XIvEXL._AC_UL300_SR300,200_.jpg",
-    "category": "home-garden",
-    "position": 2,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 40
-=======
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61sS-XIvEXL._AC_UL300_SR300,200_.jpg",
     "category": "Home & Kitchen",
     "couponCode": null,
     "source": "amazon",
     "rating": 4.4,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:53.386Z",
+    "scrapedAt": "2026-04-25T19:34:39.740Z",
     "status": "pending"
->>>>>>> f4214ab (Replace Apify/Rainforest scrapers with zero-dependency scraper)
-  },
-  {
-    "id": "B01M16WBW1",
-    "name": "Queen Size 4 Piece Sheet Set - Comfy Breathable & Cooling Bed Sheets Set - Hotel Luxury Bedding for Women, Men, Kids, Teens, ",
-    "url": "https://www.amazon.com/dp/B01M16WBW1?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B01M16WBW1",
-    "asin": "B01M16WBW1",
-    "price": 24.99,
-    "currency": "$",
-    "rating": 4.5,
-    "reviewCount": 436071,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61o6SkL3DOL._AC_UL300_SR300,200_.jpg",
-    "category": "home-garden",
-    "position": 3,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 33
-  },
-  {
-    "id": "B0DQ59R1LB",
-    "name": "HOME GROWN Zinnia Dahlia Seeds Pack for 2026 Non GMO 524 Flower Seeds | Vibrant Zinnia Elegans for Pollinator Gardens, Border",
-    "url": "https://www.amazon.com/dp/B0DQ59R1LB?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0DQ59R1LB",
-    "asin": "B0DQ59R1LB",
-    "price": 6.29,
-    "currency": "$",
-    "rating": 4.4,
-    "reviewCount": 1968,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/815osJgqacL._AC_UL300_SR300,200_.jpg",
-    "category": "home-garden",
-    "position": 4,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 8
   },
   {
     "id": "B0C3FTCYZL",
-<<<<<<< HEAD
-    "name": "Zevo Flying Insect Trap Official Refill Cartridges - Fits Both Zevo Trap & MAX Indoor Fly Trap - Authentic Trap+Lock Technolo",
-    "url": "https://www.amazon.com/dp/B0C3FTCYZL?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0C3FTCYZL",
-    "asin": "B0C3FTCYZL",
-    "price": 14.97,
-    "currency": "$",
-    "rating": 4.8,
-    "reviewCount": 38281,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81uXJAVhd1L._AC_UL300_SR300,200_.jpg",
-    "category": "home-garden",
-    "position": 5,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 20
-  },
-  {
-    "id": "B0C1NNYJGB",
-    "name": "BEDLORE Waterproof Mattress Protector, Queen Size Mattress Pad Noiseless with Deep Pocket 6\"-18\" Depth, Soft Breathable Dirt-",
-    "url": "https://www.amazon.com/dp/B0C1NNYJGB?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0C1NNYJGB",
-    "asin": "B0C1NNYJGB",
-    "price": 23.97,
-    "currency": "$",
-    "rating": 4.6,
-    "reviewCount": 18457,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71+omVwPiXL._AC_UL300_SR300,200_.jpg",
-    "category": "home-garden",
-    "position": 6,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 32
-  },
-  {
-    "id": "B00FXNAAW2",
-    "name": "Amazon Basics Slim Velvet Non-Slip Space Saving Suit Clothes Hangers, Closet Organizer, Black, 50-Pack",
-    "url": "https://www.amazon.com/dp/B00FXNAAW2?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B00FXNAAW2",
-    "asin": "B00FXNAAW2",
-    "price": 17.59,
-    "currency": "$",
-    "rating": 4.8,
-    "reviewCount": 229889,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81Cn1+lUraL._AC_UL300_SR300,200_.jpg",
-    "category": "home-garden",
-    "position": 7,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 23
-  },
-  {
-    "id": "B0BQR2BQYZ",
-    "name": "upsimples 11x14 Picture Frame, Display Pictures 8x10 with Mat or 11x14 Without Mat, Wall Hanging Photo Frame, Black, 1 Pack",
-    "url": "https://www.amazon.com/dp/B0BQR2BQYZ?tag=amazingd0f292-20",
-    "originalUrl": "https://www.amazon.com/dp/B0BQR2BQYZ",
-    "asin": "B0BQR2BQYZ",
-    "price": 6.99,
-    "currency": "$",
-    "rating": 4.5,
-    "reviewCount": 38437,
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71Si2QlAb3L._AC_UL300_SR300,200_.jpg",
-    "category": "home-garden",
-    "position": 8,
-    "scrapedAt": "2026-04-25T09:53:10.780Z",
-    "status": "pending",
-    "originalPrice": 9
-=======
     "asin": "B0C3FTCYZL",
     "name": "Zevo Flying Insect Trap Official Refill Cartridges - Fits Both Zevo Trap &amp; MAX Indoor Fly Trap - Authentic Trap+Lock Technolo",
     "url": "https://www.amazon.com/dp/B0C3FTCYZL?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0C3FTCYZL",
     "price": 29.99,
-    "originalPrice": 41,
+    "originalPrice": 38,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81uXJAVhd1L._AC_UL300_SR300,200_.jpg",
     "category": "Home & Kitchen",
@@ -1094,7 +248,7 @@
     "source": "amazon",
     "rating": 4.7,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:53.386Z",
+    "scrapedAt": "2026-04-25T19:34:39.740Z",
     "status": "pending"
   },
   {
@@ -1112,7 +266,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": 18510,
-    "scrapedAt": "2026-04-25T19:32:53.386Z",
+    "scrapedAt": "2026-04-25T19:34:39.740Z",
     "status": "pending"
   },
   {
@@ -1122,7 +276,7 @@
     "url": "https://www.amazon.com/dp/B0BQR2BQYZ?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0BQR2BQYZ",
     "price": 23.97,
-    "originalPrice": 31,
+    "originalPrice": 32,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71Si2QlAb3L._AC_UL300_SR300,200_.jpg",
     "category": "Home & Kitchen",
@@ -1130,7 +284,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:53.386Z",
+    "scrapedAt": "2026-04-25T19:34:39.740Z",
     "status": "pending"
   },
   {
@@ -1140,7 +294,7 @@
     "url": "https://www.amazon.com/dp/B00FXNAAW2?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B00FXNAAW2",
     "price": 6.99,
-    "originalPrice": 8,
+    "originalPrice": 9,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81Cn1+lUraL._AC_UL300_SR300,200_.jpg",
     "category": "Home & Kitchen",
@@ -1148,7 +302,7 @@
     "source": "amazon",
     "rating": 4.5,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:53.386Z",
+    "scrapedAt": "2026-04-25T19:34:39.740Z",
     "status": "pending"
   },
   {
@@ -1158,7 +312,7 @@
     "url": "https://www.amazon.com/dp/B0CKY689WQ?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0CKY689WQ",
     "price": 17.59,
-    "originalPrice": 22,
+    "originalPrice": 23,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81oM9Fx8QaL._AC_UL300_SR300,200_.jpg",
     "category": "Home & Kitchen",
@@ -1166,7 +320,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": 78012,
-    "scrapedAt": "2026-04-25T19:32:53.386Z",
+    "scrapedAt": "2026-04-25T19:34:39.740Z",
     "status": "pending"
   },
   {
@@ -1176,7 +330,7 @@
     "url": "https://www.amazon.com/dp/B08QRFZ6TH?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B08QRFZ6TH",
     "price": 25.96,
-    "originalPrice": 34,
+    "originalPrice": 33,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/7136-eapqKL._AC_UL300_SR300,200_.jpg",
     "category": "Home & Kitchen",
@@ -1184,7 +338,7 @@
     "source": "amazon",
     "rating": 4.3,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:53.386Z",
+    "scrapedAt": "2026-04-25T19:34:39.740Z",
     "status": "pending"
   },
   {
@@ -1202,7 +356,7 @@
     "source": "amazon",
     "rating": 4.5,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:53.386Z",
+    "scrapedAt": "2026-04-25T19:34:39.740Z",
     "status": "pending"
   },
   {
@@ -1212,7 +366,7 @@
     "url": "https://www.amazon.com/dp/B01LR5RG08?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B01LR5RG08",
     "price": 29.99,
-    "originalPrice": 40,
+    "originalPrice": 39,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61UEXxKIlrL._AC_UL300_SR300,200_.jpg",
     "category": "Sports & Outdoors",
@@ -1220,7 +374,7 @@
     "source": "amazon",
     "rating": 4.7,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:55.953Z",
+    "scrapedAt": "2026-04-25T19:34:42.270Z",
     "status": "pending"
   },
   {
@@ -1230,7 +384,7 @@
     "url": "https://www.amazon.com/dp/B0FJZP9J1V?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0FJZP9J1V",
     "price": 8.79,
-    "originalPrice": 12,
+    "originalPrice": 11,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/611jAzHOtgL._AC_UL300_SR300,200_.jpg",
     "category": "Sports & Outdoors",
@@ -1238,7 +392,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:55.953Z",
+    "scrapedAt": "2026-04-25T19:34:42.270Z",
     "status": "pending"
   },
   {
@@ -1256,7 +410,7 @@
     "source": "amazon",
     "rating": 4.7,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:55.953Z",
+    "scrapedAt": "2026-04-25T19:34:42.270Z",
     "status": "pending"
   },
   {
@@ -1266,7 +420,7 @@
     "url": "https://www.amazon.com/dp/B01AVDVHTI?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B01AVDVHTI",
     "price": 30.99,
-    "originalPrice": 42,
+    "originalPrice": 38,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71S4-NjoTDL._AC_UL300_SR300,200_.jpg",
     "category": "Sports & Outdoors",
@@ -1274,7 +428,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:55.953Z",
+    "scrapedAt": "2026-04-25T19:34:42.270Z",
     "status": "pending"
   },
   {
@@ -1292,7 +446,7 @@
     "source": "amazon",
     "rating": 4.5,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:55.953Z",
+    "scrapedAt": "2026-04-25T19:34:42.270Z",
     "status": "pending"
   },
   {
@@ -1310,7 +464,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:55.953Z",
+    "scrapedAt": "2026-04-25T19:34:42.270Z",
     "status": "pending"
   },
   {
@@ -1320,7 +474,7 @@
     "url": "https://www.amazon.com/dp/B001FZCVTM?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B001FZCVTM",
     "price": 26.97,
-    "originalPrice": 34,
+    "originalPrice": 35,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/614BsJVOvbL._AC_UL300_SR300,200_.jpg",
     "category": "Sports & Outdoors",
@@ -1328,7 +482,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:55.953Z",
+    "scrapedAt": "2026-04-25T19:34:42.270Z",
     "status": "pending"
   },
   {
@@ -1338,7 +492,7 @@
     "url": "https://www.amazon.com/dp/B01LP0U5X0?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B01LP0U5X0",
     "price": 3.59,
-    "originalPrice": 4,
+    "originalPrice": 5,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61WrjbRYC3L._AC_UL300_SR300,200_.jpg",
     "category": "Sports & Outdoors",
@@ -1346,7 +500,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:55.953Z",
+    "scrapedAt": "2026-04-25T19:34:42.270Z",
     "status": "pending"
   },
   {
@@ -1356,7 +510,7 @@
     "url": "https://www.amazon.com/dp/B0B7CJT5SP?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0B7CJT5SP",
     "price": 22.48,
-    "originalPrice": 28,
+    "originalPrice": 29,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71GNljibl9L._AC_UL300_SR300,200_.jpg",
     "category": "Sports & Outdoors",
@@ -1364,7 +518,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": 6650,
-    "scrapedAt": "2026-04-25T19:32:55.953Z",
+    "scrapedAt": "2026-04-25T19:34:42.270Z",
     "status": "pending"
   },
   {
@@ -1382,7 +536,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:55.953Z",
+    "scrapedAt": "2026-04-25T19:34:42.270Z",
     "status": "pending"
   },
   {
@@ -1400,7 +554,7 @@
     "source": "amazon",
     "rating": 4.5,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:58.563Z",
+    "scrapedAt": "2026-04-25T19:34:45.018Z",
     "status": "pending"
   },
   {
@@ -1410,7 +564,7 @@
     "url": "https://www.amazon.com/dp/B0FNMC64GM?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0FNMC64GM",
     "price": 19.95,
-    "originalPrice": 27,
+    "originalPrice": 25,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61fg6AeoFlL._AC_UL300_SR300,200_.jpg",
     "category": "Fashion",
@@ -1418,7 +572,7 @@
     "source": "amazon",
     "rating": 4,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:58.563Z",
+    "scrapedAt": "2026-04-25T19:34:45.018Z",
     "status": "pending"
   },
   {
@@ -1428,7 +582,7 @@
     "url": "https://www.amazon.com/dp/B0FNC4GM8V?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0FNC4GM8V",
     "price": 14.98,
-    "originalPrice": 19,
+    "originalPrice": 20,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81JY24vMSHL._AC_UL300_SR300,200_.jpg",
     "category": "Fashion",
@@ -1436,7 +590,7 @@
     "source": "amazon",
     "rating": 4.3,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:58.563Z",
+    "scrapedAt": "2026-04-25T19:34:45.018Z",
     "status": "pending"
   },
   {
@@ -1454,7 +608,7 @@
     "source": "amazon",
     "rating": 4.4,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:58.563Z",
+    "scrapedAt": "2026-04-25T19:34:45.018Z",
     "status": "pending"
   },
   {
@@ -1464,7 +618,7 @@
     "url": "https://www.amazon.com/dp/B0014BYHJE?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0014BYHJE",
     "price": 22.99,
-    "originalPrice": 31,
+    "originalPrice": 28,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61SuPkDGYfL._AC_UL300_SR300,200_.jpg",
     "category": "Fashion",
@@ -1472,7 +626,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:58.563Z",
+    "scrapedAt": "2026-04-25T19:34:45.018Z",
     "status": "pending"
   },
   {
@@ -1490,7 +644,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:58.563Z",
+    "scrapedAt": "2026-04-25T19:34:45.018Z",
     "status": "pending"
   },
   {
@@ -1500,7 +654,7 @@
     "url": "https://www.amazon.com/dp/B00D1ARZMC?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B00D1ARZMC",
     "price": 18.79,
-    "originalPrice": 26,
+    "originalPrice": 24,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51JzwHcjh1L._AC_UL300_SR300,200_.jpg",
     "category": "Fashion",
@@ -1508,7 +662,7 @@
     "source": "amazon",
     "rating": 4.4,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:58.563Z",
+    "scrapedAt": "2026-04-25T19:34:45.018Z",
     "status": "pending"
   },
   {
@@ -1526,7 +680,7 @@
     "source": "amazon",
     "rating": 4.5,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:58.563Z",
+    "scrapedAt": "2026-04-25T19:34:45.018Z",
     "status": "pending"
   },
   {
@@ -1544,7 +698,7 @@
     "source": "amazon",
     "rating": 4.4,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:58.563Z",
+    "scrapedAt": "2026-04-25T19:34:45.018Z",
     "status": "pending"
   },
   {
@@ -1562,7 +716,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:32:58.563Z",
+    "scrapedAt": "2026-04-25T19:34:45.018Z",
     "status": "pending"
   },
   {
@@ -1572,7 +726,7 @@
     "url": "https://www.amazon.com/dp/B08KT2Z93D?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B08KT2Z93D",
     "price": 18.9,
-    "originalPrice": 24,
+    "originalPrice": 26,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51lP01--ejL._AC_UL300_SR300,200_.jpg",
     "category": "Beauty",
@@ -1580,7 +734,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:01.130Z",
+    "scrapedAt": "2026-04-25T19:34:47.552Z",
     "status": "pending"
   },
   {
@@ -1590,7 +744,7 @@
     "url": "https://www.amazon.com/dp/B074PVTPBW?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B074PVTPBW",
     "price": 9.97,
-    "originalPrice": 13,
+    "originalPrice": 12,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61p+1+md+8L._AC_UL300_SR300,200_.jpg",
     "category": "Beauty",
@@ -1598,7 +752,7 @@
     "source": "amazon",
     "rating": 4.7,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:01.130Z",
+    "scrapedAt": "2026-04-25T19:34:47.552Z",
     "status": "pending"
   },
   {
@@ -1608,7 +762,7 @@
     "url": "https://www.amazon.com/dp/B071914GGL?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B071914GGL",
     "price": 12.99,
-    "originalPrice": 16,
+    "originalPrice": 17,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51bC4vVdkOL._AC_UL300_SR300,200_.jpg",
     "category": "Beauty",
@@ -1616,7 +770,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:01.130Z",
+    "scrapedAt": "2026-04-25T19:34:47.552Z",
     "status": "pending"
   },
   {
@@ -1626,7 +780,7 @@
     "url": "https://www.amazon.com/dp/B00U2VQZDS?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B00U2VQZDS",
     "price": 10.39,
-    "originalPrice": 13,
+    "originalPrice": 14,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71eFYqXRGoL._AC_UL300_SR300,200_.jpg",
     "category": "Beauty",
@@ -1634,7 +788,7 @@
     "source": "amazon",
     "rating": 4.7,
     "reviewCount": 118605,
-    "scrapedAt": "2026-04-25T19:33:01.130Z",
+    "scrapedAt": "2026-04-25T19:34:47.552Z",
     "status": "pending"
   },
   {
@@ -1652,7 +806,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": 41624,
-    "scrapedAt": "2026-04-25T19:33:01.130Z",
+    "scrapedAt": "2026-04-25T19:34:47.552Z",
     "status": "pending"
   },
   {
@@ -1662,7 +816,7 @@
     "url": "https://www.amazon.com/dp/B08H3JPH74?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B08H3JPH74",
     "price": 19,
-    "originalPrice": 25,
+    "originalPrice": 26,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71MQo8pHmBL._AC_UL300_SR300,200_.jpg",
     "category": "Beauty",
@@ -1670,7 +824,7 @@
     "source": "amazon",
     "rating": 4.5,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:01.130Z",
+    "scrapedAt": "2026-04-25T19:34:47.552Z",
     "status": "pending"
   },
   {
@@ -1688,7 +842,7 @@
     "source": "amazon",
     "rating": 4.5,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:01.130Z",
+    "scrapedAt": "2026-04-25T19:34:47.552Z",
     "status": "pending"
   },
   {
@@ -1706,7 +860,7 @@
     "source": "amazon",
     "rating": 4.7,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:01.131Z",
+    "scrapedAt": "2026-04-25T19:34:47.552Z",
     "status": "pending"
   },
   {
@@ -1716,7 +870,7 @@
     "url": "https://www.amazon.com/dp/B081KL2QYJ?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B081KL2QYJ",
     "price": 17.95,
-    "originalPrice": 22,
+    "originalPrice": 23,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/713tzBRSP+L._AC_UL300_SR300,200_.jpg",
     "category": "Beauty",
@@ -1724,7 +878,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:01.131Z",
+    "scrapedAt": "2026-04-25T19:34:47.552Z",
     "status": "pending"
   },
   {
@@ -1742,7 +896,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:01.131Z",
+    "scrapedAt": "2026-04-25T19:34:47.552Z",
     "status": "pending"
   },
   {
@@ -1752,7 +906,7 @@
     "url": "https://www.amazon.com/dp/B0BZCHMVTK?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0BZCHMVTK",
     "price": 6.99,
-    "originalPrice": 8,
+    "originalPrice": 9,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71FqjBG9v7L._AC_UL300_SR300,200_.jpg",
     "category": "Toys & Games",
@@ -1760,7 +914,7 @@
     "source": "amazon",
     "rating": 4.5,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:03.963Z",
+    "scrapedAt": "2026-04-25T19:34:50.255Z",
     "status": "pending"
   },
   {
@@ -1770,7 +924,7 @@
     "url": "https://www.amazon.com/dp/B09SDKSXLZ?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B09SDKSXLZ",
     "price": 6.98,
-    "originalPrice": 9,
+    "originalPrice": 8,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61QrJHOz-YL._AC_UL300_SR300,200_.jpg",
     "category": "Toys & Games",
@@ -1778,7 +932,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:03.963Z",
+    "scrapedAt": "2026-04-25T19:34:50.255Z",
     "status": "pending"
   },
   {
@@ -1788,7 +942,7 @@
     "url": "https://www.amazon.com/dp/B09TK9JGRH?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B09TK9JGRH",
     "price": 5.34,
-    "originalPrice": 6,
+    "originalPrice": 7,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71EvCcJx5tL._AC_UL300_SR300,200_.jpg",
     "category": "Toys & Games",
@@ -1796,7 +950,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:03.963Z",
+    "scrapedAt": "2026-04-25T19:34:50.255Z",
     "status": "pending"
   },
   {
@@ -1806,7 +960,7 @@
     "url": "https://www.amazon.com/dp/B0G3CV6Z9D?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0G3CV6Z9D",
     "price": 11.48,
-    "originalPrice": 16,
+    "originalPrice": 14,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81sZheTQIhL._AC_UL300_SR300,200_.jpg",
     "category": "Toys & Games",
@@ -1814,7 +968,7 @@
     "source": "amazon",
     "rating": 4.4,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:03.963Z",
+    "scrapedAt": "2026-04-25T19:34:50.255Z",
     "status": "pending"
   },
   {
@@ -1824,7 +978,7 @@
     "url": "https://www.amazon.com/dp/B0GX1XP72Z?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0GX1XP72Z",
     "price": 93.42,
-    "originalPrice": 123,
+    "originalPrice": 122,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71KMcZDjQmL._AC_UL300_SR300,200_.jpg",
     "category": "Toys & Games",
@@ -1832,7 +986,7 @@
     "source": "amazon",
     "rating": null,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:03.963Z",
+    "scrapedAt": "2026-04-25T19:34:50.255Z",
     "status": "pending"
   },
   {
@@ -1850,7 +1004,7 @@
     "source": "amazon",
     "rating": 4.2,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:03.963Z",
+    "scrapedAt": "2026-04-25T19:34:50.255Z",
     "status": "pending"
   },
   {
@@ -1868,7 +1022,7 @@
     "source": "amazon",
     "rating": 4.2,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:03.963Z",
+    "scrapedAt": "2026-04-25T19:34:50.255Z",
     "status": "pending"
   },
   {
@@ -1886,7 +1040,7 @@
     "source": "amazon",
     "rating": 4.3,
     "reviewCount": 3014,
-    "scrapedAt": "2026-04-25T19:33:03.963Z",
+    "scrapedAt": "2026-04-25T19:34:50.255Z",
     "status": "pending"
   },
   {
@@ -1896,7 +1050,7 @@
     "url": "https://www.amazon.com/dp/B0GWPWCD9H?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0GWPWCD9H",
     "price": 9.99,
-    "originalPrice": 12,
+    "originalPrice": 13,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/613Uhv+9J0L._AC_UL300_SR300,200_.jpg",
     "category": "Toys & Games",
@@ -1904,7 +1058,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": 1,
-    "scrapedAt": "2026-04-25T19:33:03.963Z",
+    "scrapedAt": "2026-04-25T19:34:50.255Z",
     "status": "pending"
   },
   {
@@ -1922,7 +1076,7 @@
     "source": "amazon",
     "rating": 1,
     "reviewCount": 67933,
-    "scrapedAt": "2026-04-25T19:33:03.963Z",
+    "scrapedAt": "2026-04-25T19:34:50.255Z",
     "status": "pending"
   },
   {
@@ -1940,7 +1094,7 @@
     "source": "amazon",
     "rating": 4.7,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:06.451Z",
+    "scrapedAt": "2026-04-25T19:34:52.674Z",
     "status": "pending"
   },
   {
@@ -1950,7 +1104,7 @@
     "url": "https://www.amazon.com/dp/B0113UZJE2?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0113UZJE2",
     "price": 24,
-    "originalPrice": 32,
+    "originalPrice": 31,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/91YrLTBnMcL._AC_UL300_SR300,200_.jpg",
     "category": "Kitchen",
@@ -1958,7 +1112,7 @@
     "source": "amazon",
     "rating": 4.7,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:06.451Z",
+    "scrapedAt": "2026-04-25T19:34:52.674Z",
     "status": "pending"
   },
   {
@@ -1968,7 +1122,7 @@
     "url": "https://www.amazon.com/dp/B0D6C6GS58?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0D6C6GS58",
     "price": 13.99,
-    "originalPrice": 18,
+    "originalPrice": 19,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/31tbwj3Mi9L._AC_UL300_SR300,200_.jpg",
     "category": "Kitchen",
@@ -1976,7 +1130,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": 18657,
-    "scrapedAt": "2026-04-25T19:33:06.451Z",
+    "scrapedAt": "2026-04-25T19:34:52.674Z",
     "status": "pending"
   },
   {
@@ -1986,7 +1140,7 @@
     "url": "https://www.amazon.com/dp/B0CYJBB2JQ?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0CYJBB2JQ",
     "price": 34.99,
-    "originalPrice": 46,
+    "originalPrice": 48,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71zZ0tSkfHL._AC_UL300_SR300,200_.jpg",
     "category": "Kitchen",
@@ -1994,7 +1148,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:06.451Z",
+    "scrapedAt": "2026-04-25T19:34:52.674Z",
     "status": "pending"
   },
   {
@@ -2004,7 +1158,7 @@
     "url": "https://www.amazon.com/dp/B00S93EQUK?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B00S93EQUK",
     "price": 24.98,
-    "originalPrice": 34,
+    "originalPrice": 32,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81bpKKv68-L._AC_UL300_SR300,200_.jpg",
     "category": "Kitchen",
@@ -2012,7 +1166,7 @@
     "source": "amazon",
     "rating": 4.3,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:06.451Z",
+    "scrapedAt": "2026-04-25T19:34:52.674Z",
     "status": "pending"
   },
   {
@@ -2022,7 +1176,7 @@
     "url": "https://www.amazon.com/dp/B0DF472VMZ?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0DF472VMZ",
     "price": 12.97,
-    "originalPrice": 16,
+    "originalPrice": 17,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/311JdFvhtVL._AC_UL300_SR300,200_.jpg",
     "category": "Kitchen",
@@ -2030,7 +1184,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:06.451Z",
+    "scrapedAt": "2026-04-25T19:34:52.674Z",
     "status": "pending"
   },
   {
@@ -2040,7 +1194,7 @@
     "url": "https://www.amazon.com/dp/B0B6PLG6G2?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0B6PLG6G2",
     "price": 24.99,
-    "originalPrice": 31,
+    "originalPrice": 32,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/710lcyAkSSL._AC_UL300_SR300,200_.jpg",
     "category": "Kitchen",
@@ -2048,7 +1202,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:06.451Z",
+    "scrapedAt": "2026-04-25T19:34:52.674Z",
     "status": "pending"
   },
   {
@@ -2058,7 +1212,7 @@
     "url": "https://www.amazon.com/dp/B0CBM682SQ?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0CBM682SQ",
     "price": 9.99,
-    "originalPrice": 13,
+    "originalPrice": 12,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71eAr9iJ0KL._AC_UL300_SR300,200_.jpg",
     "category": "Kitchen",
@@ -2066,7 +1220,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:06.451Z",
+    "scrapedAt": "2026-04-25T19:34:52.674Z",
     "status": "pending"
   },
   {
@@ -2076,7 +1230,7 @@
     "url": "https://www.amazon.com/dp/B07PZF3QS3?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B07PZF3QS3",
     "price": 9.97,
-    "originalPrice": 13,
+    "originalPrice": 12,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51Byq+vTy1L._AC_UL300_SR300,200_.jpg",
     "category": "Kitchen",
@@ -2084,7 +1238,7 @@
     "source": "amazon",
     "rating": 4.5,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:06.451Z",
+    "scrapedAt": "2026-04-25T19:34:52.674Z",
     "status": "pending"
   },
   {
@@ -2102,7 +1256,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:06.451Z",
+    "scrapedAt": "2026-04-25T19:34:52.674Z",
     "status": "pending"
   },
   {
@@ -2120,7 +1274,7 @@
     "source": "amazon",
     "rating": 4.5,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:09.077Z",
+    "scrapedAt": "2026-04-25T19:34:55.169Z",
     "status": "pending"
   },
   {
@@ -2130,7 +1284,7 @@
     "url": "https://www.amazon.com/dp/B0009X29WK?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0009X29WK",
     "price": 28.06,
-    "originalPrice": 37,
+    "originalPrice": 35,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71gV7T7iW-L._AC_UL300_SR300,200_.jpg",
     "category": "Pet Supplies",
@@ -2138,7 +1292,7 @@
     "source": "amazon",
     "rating": 4.7,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:09.077Z",
+    "scrapedAt": "2026-04-25T19:34:55.169Z",
     "status": "pending"
   },
   {
@@ -2148,7 +1302,7 @@
     "url": "https://www.amazon.com/dp/B07S2TDDCK?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B07S2TDDCK",
     "price": 20.99,
-    "originalPrice": 27,
+    "originalPrice": 28,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71BF+K8vaVL._AC_UL300_SR300,200_.jpg",
     "category": "Pet Supplies",
@@ -2156,7 +1310,7 @@
     "source": "amazon",
     "rating": 4.3,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:09.077Z",
+    "scrapedAt": "2026-04-25T19:34:55.169Z",
     "status": "pending"
   },
   {
@@ -2174,7 +1328,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:09.077Z",
+    "scrapedAt": "2026-04-25T19:34:55.169Z",
     "status": "pending"
   },
   {
@@ -2192,7 +1346,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:09.077Z",
+    "scrapedAt": "2026-04-25T19:34:55.169Z",
     "status": "pending"
   },
   {
@@ -2202,7 +1356,7 @@
     "url": "https://www.amazon.com/dp/B07D323MFZ?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B07D323MFZ",
     "price": 20.9,
-    "originalPrice": 28,
+    "originalPrice": 26,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71B8D1hWW4L._AC_UL300_SR300,200_.jpg",
     "category": "Pet Supplies",
@@ -2210,7 +1364,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:09.077Z",
+    "scrapedAt": "2026-04-25T19:34:55.169Z",
     "status": "pending"
   },
   {
@@ -2220,7 +1374,7 @@
     "url": "https://www.amazon.com/dp/B07C22NTL4?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B07C22NTL4",
     "price": 32.99,
-    "originalPrice": 45,
+    "originalPrice": 46,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81SdWJWy--L._AC_UL300_SR300,200_.jpg",
     "category": "Pet Supplies",
@@ -2228,7 +1382,7 @@
     "source": "amazon",
     "rating": 4.9,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:09.077Z",
+    "scrapedAt": "2026-04-25T19:34:55.169Z",
     "status": "pending"
   },
   {
@@ -2238,7 +1392,7 @@
     "url": "https://www.amazon.com/dp/B08P2D95G8?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B08P2D95G8",
     "price": 14.57,
-    "originalPrice": 18,
+    "originalPrice": 19,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81aUrJooKcL._AC_UL300_SR300,200_.jpg",
     "category": "Pet Supplies",
@@ -2246,7 +1400,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:09.077Z",
+    "scrapedAt": "2026-04-25T19:34:55.169Z",
     "status": "pending"
   },
   {
@@ -2264,7 +1418,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:09.077Z",
+    "scrapedAt": "2026-04-25T19:34:55.169Z",
     "status": "pending"
   },
   {
@@ -2282,7 +1436,7 @@
     "source": "amazon",
     "rating": 4.7,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:09.077Z",
+    "scrapedAt": "2026-04-25T19:34:55.169Z",
     "status": "pending"
   },
   {
@@ -2300,7 +1454,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:13.916Z",
+    "scrapedAt": "2026-04-25T19:34:59.961Z",
     "status": "pending"
   },
   {
@@ -2310,7 +1464,7 @@
     "url": "https://www.amazon.com/dp/B00006IFHD?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B00006IFHD",
     "price": 7.99,
-    "originalPrice": 11,
+    "originalPrice": 10,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81wGuZOL1fL._AC_UL300_SR300,200_.jpg",
     "category": "Office Products",
@@ -2318,7 +1472,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:13.916Z",
+    "scrapedAt": "2026-04-25T19:34:59.961Z",
     "status": "pending"
   },
   {
@@ -2336,7 +1490,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:13.916Z",
+    "scrapedAt": "2026-04-25T19:34:59.961Z",
     "status": "pending"
   },
   {
@@ -2354,7 +1508,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:13.916Z",
+    "scrapedAt": "2026-04-25T19:34:59.962Z",
     "status": "pending"
   },
   {
@@ -2372,7 +1526,7 @@
     "source": "amazon",
     "rating": 4.6,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:13.916Z",
+    "scrapedAt": "2026-04-25T19:34:59.962Z",
     "status": "pending"
   },
   {
@@ -2390,7 +1544,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:13.916Z",
+    "scrapedAt": "2026-04-25T19:34:59.962Z",
     "status": "pending"
   },
   {
@@ -2400,7 +1554,7 @@
     "url": "https://www.amazon.com/dp/B07R8D1RHS?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B07R8D1RHS",
     "price": 17.99,
-    "originalPrice": 25,
+    "originalPrice": 22,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81kw30b3USL._AC_UL300_SR300,200_.jpg",
     "category": "Office Products",
@@ -2408,7 +1562,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:13.916Z",
+    "scrapedAt": "2026-04-25T19:34:59.962Z",
     "status": "pending"
   },
   {
@@ -2426,7 +1580,7 @@
     "source": "amazon",
     "rating": 4.7,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:13.916Z",
+    "scrapedAt": "2026-04-25T19:34:59.962Z",
     "status": "pending"
   },
   {
@@ -2436,7 +1590,7 @@
     "url": "https://www.amazon.com/dp/B00QSR9URI?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B00QSR9URI",
     "price": 14.89,
-    "originalPrice": 19,
+    "originalPrice": 20,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71yF0u1B+tL._AC_UL300_SR300,200_.jpg",
     "category": "Office Products",
@@ -2444,7 +1598,7 @@
     "source": "amazon",
     "rating": 4.8,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:13.916Z",
+    "scrapedAt": "2026-04-25T19:34:59.962Z",
     "status": "pending"
   },
   {
@@ -2454,7 +1608,7 @@
     "url": "https://www.amazon.com/dp/B072FVQNWM?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B072FVQNWM",
     "price": 12.02,
-    "originalPrice": 16,
+    "originalPrice": 15,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71M2jqoK7XL._AC_UL300_SR300,200_.jpg",
     "category": "Office Products",
@@ -2462,7 +1616,7 @@
     "source": "amazon",
     "rating": 4.7,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:13.916Z",
+    "scrapedAt": "2026-04-25T19:34:59.962Z",
     "status": "pending"
   },
   {
@@ -2480,7 +1634,7 @@
     "source": "slickdeals",
     "rating": null,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:16.293Z",
+    "scrapedAt": "2026-04-25T19:35:03.348Z",
     "status": "pending"
   },
   {
@@ -2498,7 +1652,7 @@
     "source": "slickdeals",
     "rating": null,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:16.293Z",
+    "scrapedAt": "2026-04-25T19:35:03.349Z",
     "status": "pending"
   },
   {
@@ -2508,7 +1662,7 @@
     "url": "https://www.amazon.com/dp/B0CTRY9GMS?tag=amazingd0f292-20",
     "originalUrl": "https://www.amazon.com/dp/B0CTRY9GMS",
     "price": 6.92,
-    "originalPrice": 8,
+    "originalPrice": 9,
     "currency": "$",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/P/B0CTRY9GMS.01._SCLZZZZZZZ_.jpg",
     "category": "Deals",
@@ -2516,8 +1670,7 @@
     "source": "slickdeals",
     "rating": null,
     "reviewCount": null,
-    "scrapedAt": "2026-04-25T19:33:17.540Z",
+    "scrapedAt": "2026-04-25T19:35:04.713Z",
     "status": "pending"
->>>>>>> f4214ab (Replace Apify/Rainforest scrapers with zero-dependency scraper)
   }
 ]
