@@ -2,11 +2,11 @@
   "siteConfig": {
     "siteName": "Top Dealz Daily",
     "siteUrl": "topdealzdaily.com",
-    "instagram": "@amazingdeals_17",
+    "instagram": "@topdealzzdaily",
     "description": "Daily Amazon deals up to $100 - Save 50-70% every day!"
   },
   "amazonConfig": {
-    "affiliateTag": "amazingd0f292-20",
+    "affiliateTag": "topdealzzdail-20",
     "priceRange": {
       "min": 0,
       "max": 100
@@ -21,7 +21,7 @@
     "timezone": "America/New_York"
   },
   "instagramConfig": {
-    "captionTemplate": "🔥 {productName} - {discount}% OFF!\n\n💰 Was ${originalPrice}, Now ${currentPrice}\n\n🚨 Comment \"LINK\" & I'll send you the direct Amazon link\n\nFollow @amazingdeals_17 for daily Amazon deals you don't want to miss! 👇\n\n#amazondeals #promocodes #dailydeals #amazonfinds #dealoftheday #discounts #savingmoney #amazonusa #dealfinder #amazonshopping",
+    "captionTemplate": "🔥 {productName} - {discount}% OFF!\n\n💰 Was ${originalPrice}, Now ${currentPrice}\n\n🚨 Comment \"LINK\" & I'll send you the direct Amazon link\n\nFollow @topdealzzdaily for daily Amazon deals you don't want to miss! 👇\n\n#amazondeals #promocodes #dailydeals #amazonfinds #dealoftheday #discounts #savingmoney #amazonusa #dealfinder #amazonshopping",
     "hashtags": [
       "amazondeals",
       "promocodes",
