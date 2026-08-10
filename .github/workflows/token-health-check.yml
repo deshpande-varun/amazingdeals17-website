@@ -1,0 +1,74 @@
+name: Instagram Token Health Check
+
+# Runs every Monday 8 AM UTC to verify the Instagram token is valid and not
+# about to expire. If it's broken or expiring within 7 days, it opens (or
+# updates) a GitHub issue so you get an email BEFORE posting silently breaks.
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-token:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Check Instagram token
+        id: check
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+        run: node scripts/check-instagram-token.js
+
+      - name: Open issue if token is bad
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = '⚠️ Instagram token needs renewal';
+            const body = [
+              'The Instagram access token health check **failed**.',
+              '',
+              'Instagram posting will stop until the token is renewed.',
+              '',
+              '**How to fix:**',
+              '1. Go to https://developers.facebook.com/tools/explorer/',
+              '2. Select the "Amazon Deals" app, generate a new token (grant Instagram + Page permissions).',
+              '3. Ask Claude to exchange it for a long-lived/permanent token and update the `INSTAGRAM_ACCESS_TOKEN` secret.',
+              '',
+              'See the failed run for details: ' +
+                `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+            ].join('\n');
+
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+            });
+            const match = existing.data.find(i => i.title === title);
+            if (match) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: match.number,
+                body: 'Still failing as of ' + new Date().toISOString() + '.',
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+              });
+            }
