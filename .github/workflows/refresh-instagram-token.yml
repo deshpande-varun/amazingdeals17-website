@@ -1,0 +1,47 @@
+name: Refresh Instagram Token
+
+# A long-lived user token can be re-exchanged for a fresh 60-day token before it
+# expires. Running this every ~50 days rolls the expiry forward indefinitely, so
+# the token never lapses. Writing the new token back to the secret requires a PAT
+# (GITHUB_TOKEN cannot update secrets), stored as GH_PAT.
+
+on:
+  schedule:
+    - cron: '0 6 1 */1 *'   # 6 AM UTC on the 1st of every month
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Refresh token
+        id: refresh
+        env:
+          INSTAGRAM_APP_ID: ${{ secrets.INSTAGRAM_APP_ID }}
+          INSTAGRAM_APP_SECRET: ${{ secrets.INSTAGRAM_APP_SECRET }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+        run: |
+          OUT=$(node scripts/refresh-instagram-token.js)
+          NEW_TOKEN="${OUT#NEW_TOKEN=}"
+          echo "::add-mask::$NEW_TOKEN"
+          echo "new_token=$NEW_TOKEN" >> "$GITHUB_OUTPUT"
+
+      - name: Store new token in secret
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          NEW_TOKEN: ${{ steps.refresh.outputs.new_token }}
+        run: |
+          printf '%s' "$NEW_TOKEN" | gh secret set INSTAGRAM_ACCESS_TOKEN \
+            --repo "${{ github.repository }}"
+          echo "Token secret updated."
